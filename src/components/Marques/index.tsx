@@ -8,21 +8,21 @@ const Marques = () => {
       name: 'John Doe',
       role: 'CEO',
       description: 'Celline vous offre tout le confort dun papier de haute qualité pour une meil- leure hygiène quotidienne.',
-      imageUrl: 'https://res.cloudinary.com/du8ucnqlx/image/upload/v1698262749/Page%201/xr50tmusmog9nxc2v0k6.png', 
+      imageUrl: '/marques/Celline.PNG', 
       linkColor: 'text-blue-500', 
     },
     {
       name: 'Jane Smith',
       role: 'Designer',
       description: 'Rysh offre laccès à une large gamme de papiers qui participe à lhygiène quotidi enne de toute la famille.',
-      imageUrl: 'https://res.cloudinary.com/du8ucnqlx/image/upload/v1698262747/Page%201/kqgpfoxb0euzew1mgth5.png', // Replace with the actual image URL
+      imageUrl: '/marques/Rysh.PNG', // Replace with the actual image URL
       linkColor: 'text-purple-500', // Purple link
     },
     {
       name: 'Bob Johnson',
       role: 'Developer',
       description: 'Africa west paper a conçu une gamme spéciale de produits multi-usages pour le nettoyage professionnel.',
-      imageUrl: 'https://res.cloudinary.com/du8ucnqlx/image/upload/v1698262748/Page%201/da7lgefjr1pscorspddp.png', // Replace with the actual image URL
+      imageUrl: '/marques/AWP.PNG', // Replace with the actual image URL
       linkColor: 'text-green-500', // Green link
     },
   ];
