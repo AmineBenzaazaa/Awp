@@ -1,7 +1,7 @@
 import NewsLatterBox from "./NewsLatterBox";
 import SectionTitle from "../Common/SectionTitle";
 import Image from "next/image";
-import Logo from "../images/page 1/Logo.png";
+import Logo from "../../../public/images/page 1/Logo.png";
 const Contact = () => {
   return (
     <div id="contact" className="flex flex-row container">
