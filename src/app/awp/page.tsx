@@ -19,7 +19,7 @@ export default function page() {
         title="Papier"
         subTitle="ESSUIE-TOUT"
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime velit cumque deleniti, blanditiis minima doloremque alias odit, accusantium ut, iure labore ad minus provident expedita veniam nihil eligendi? Nisi, voluptates."
-        imageSrc={Prod1}
+        imageSrc="../images/page 4/Prod1.png"
       />
     </div>
   );
@@ -29,7 +29,7 @@ export default function page() {
         title="Papier"
         subTitle="ESSUIE-TOUT"
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime velit cumque deleniti, blanditiis minima doloremque alias odit, accusantium ut, iure labore ad minus provident expedita veniam nihil eligendi? Nisi, voluptates."
-        imageSrc={Prod2}
+        imageSrc="../images/page 4/Prod2.png"
       />
     </div>
   );
@@ -39,7 +39,7 @@ export default function page() {
         title="Papier"
         subTitle="ESSUIE-TOUT"
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime velit cumque deleniti, blanditiis minima doloremque alias odit, accusantium ut, iure labore ad minus provident expedita veniam nihil eligendi? Nisi, voluptates."
-        imageSrc={Prod3}
+        imageSrc="../images/page 4/Prod3.png"
       />
     </div>
   );
@@ -49,7 +49,7 @@ export default function page() {
         title="Papier"
         subTitle="ESSUIE-TOUT"
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime velit cumque deleniti, blanditiis minima doloremque alias odit, accusantium ut, iure labore ad minus provident expedita veniam nihil eligendi? Nisi, voluptates."
-        imageSrc={Prod4}
+        imageSrc="../images/page 4/Prod4.png"
       />
     </div>
   );
