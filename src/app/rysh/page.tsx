@@ -5,7 +5,7 @@ import AboutSectionOne from "@/components/Rysh/AboutSectionOne";
 import CustomCarousel from "@/components/CustomCarousel";
 import { Tabs, Tab } from "@/components/Rysh/Tabs";
 
-import Logo from "../images/page 3/Logo.png";
+import Logo from "../images/page 3/logo.png";
 import Prod1 from "../images/page 3/Prod1.png";
 import Prod2 from "../images/page 3/Prod2.png";
 import Prod3 from "../images/page 3/Prod3.png";

@@ -6,10 +6,10 @@ import CustomCarousel from "@/components/CustomCarousel";
 import { Tabs, Tab } from "@/components/Tabs";
 
 import Logo from "../images/page 2/Logo.png";
-import Prod1 from "../images/page 2/Prod1.png";
-import Prod2 from "../images/page 2/Prod2.png";
-import Prod3 from "../images/page 2/Prod3.png";
-import Prod4 from "../images/page 2/Prod4.png";
+import Prod1 from "../images/page 2/prod1.png";
+import Prod2 from "../images/page 2/prod2.png";
+import Prod3 from "../images/page 2/prod3.png";
+import Prod4 from "../images/page 2/prod4.png";
 
 import Prod5 from "../images/page 2/Prod5.png";
 import Prod6 from "../images/page 2/Prod6.png";
