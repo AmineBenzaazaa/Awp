@@ -1,24 +1,23 @@
 "use client";
 import Image from "next/image";
 
-import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutSectionOne from "@/components/Rysh/AboutSectionOne";
 import CustomCarousel from "@/components/CustomCarousel";
-import { Tabs, Tab } from "@/components/Tabs";
+import { Tabs, Tab } from "@/components/Rysh/Tabs";
 
-import Logo from "@/app/images/page 2/Logo.png";
-import Prod1 from "@/app/images/page 2/Prod1.png";
-import Prod2 from "@/app/images/page 2/Prod2.png";
-import Prod3 from "@/app/images/page 2/Prod3.png";
-import Prod4 from "@/app/images/page 2/Prod4.png";
+import Logo from "@/app/images/page 3/Logo.png";
+import Prod1 from "@/app/images/page 3/Prod1.png";
+import Prod2 from "@/app/images/page 3/Prod2.png";
+import Prod3 from "@/app/images/page 3/Prod3.png";
+import Prod4 from "@/app/images/page 3/Prod4.png";
 
-import Prod5 from "@/app/images/page 2/Prod5.png";
-import Prod6 from "@/app/images/page 2/Prod6.png";
+import Prod5 from "@/app/images/page 3/Prod5.png";
+import Prod6 from "@/app/images/page 3/Prod6.png";
 
-import Prod7 from "@/app/images/page 2/Prod7.png";
-import Prod8 from "@/app/images/page 2/Prod8.png";
-import Prod9 from "@/app/images/page 2/Prod9.png";
+import Prod7 from "@/app/images/page 3/Prod7.png";
+import Prod8 from "@/app/images/page 3/Prod8.png";
+import Prod9 from "@/app/images/page 3/Prod9.png";
 
-import Slider1 from "@/app/images/page 2/Slider1.png";
 import Contact from "@/components/Contact";
 
 export default function page() {
@@ -118,7 +117,7 @@ export default function page() {
     <>
       <section
         id="home"
-        className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-700 via-blue-500 to-cyan-500 pt-[80px] pb-[80px] md:pt-[120px] md:pb-[30px] "
+        className="bg-gradient-to-r from-violet-900 via-violet-600 to-fuchsia-600 pt-[40px] pb-[60px] md:pt-[80px] md:pb-[60px] "
       >
         <div
           className="wow fadeInUp mx-auto max-w-[1200px] text-center"
@@ -127,10 +126,9 @@ export default function page() {
           <div className="flex flex-col items-center justify-center h-full">
             {" "}
             {/* Centering div */}
-            <Image src={Logo} alt="Celline" width={380} height={1000} />
-            <h1 className=" pt-8 uppercase text-white mb-5 text-4xl font-bold leading-tight sm:text-xl sm:leading-tight md:leading-tight">
-              tous le confort <br /> d'un papier <br />
-              de haute qualite
+            <Image src={Logo} alt="Celline" width={580} height={1000} />
+            <h1 className="py-16 uppercase text-white mb-5 text-4xl font-bold leading-tight sm:text-xl sm:leading-tight md:leading-tight">
+              L'HYGIENE QUTIDIENNE <br /> DE TOUTE LA FAMILLE
             </h1>
           </div>
         </div>
@@ -142,6 +140,7 @@ export default function page() {
               <div className="flex items-center space-x-2">
                 <Image
                   src={Prod1}
+                  alt=""
                   className="w-full h-60 object-cover object-center"
                 />
               </div>
@@ -150,6 +149,7 @@ export default function page() {
               <div className="flex items-center space-x-2">
                 <Image
                   src={Prod2}
+                  alt=""
                   className="w-full h-60 object-cover object-center"
                 />
               </div>
@@ -158,6 +158,7 @@ export default function page() {
               <div className="flex items-center space-x-2">
                 <Image
                   src={Prod3}
+                  alt=""
                   className="w-full h-60 object-cover object-center"
                 />
               </div>
@@ -166,6 +167,7 @@ export default function page() {
               <div className="flex items-center space-x-2">
                 <Image
                   src={Prod4}
+                  alt=""
                   className="w-full h-60 object-cover object-center"
                 />
               </div>
@@ -180,6 +182,7 @@ export default function page() {
               <div className="flex items-center space-x-2 bg-white px-10">
                 <Image
                   src={Prod5}
+                  alt=""
                   className="w-full h-60 object-cover object-center"
                 />
               </div>
@@ -211,6 +214,7 @@ export default function page() {
               <div className="flex items-center space-x-2 bg-white px-10">
                 <Image
                   src={Prod7}
+                  alt=""
                   className="w-full h-60 object-cover object-center"
                 />
               </div>
@@ -220,6 +224,7 @@ export default function page() {
               <div className="flex items-center space-x-2 bg-white p-5">
                 <Image
                   src={Prod8}
+                  alt=""
                   className="w-full h-60 object-cover object-center "
                 />
               </div>
@@ -228,6 +233,7 @@ export default function page() {
               <div className="flex items-center space-x-2 bg-white px-10">
                 <Image
                   src={Prod9}
+                  alt=""
                   className="w-full h-60 object-cover object-center"
                 />
               </div>
@@ -235,8 +241,8 @@ export default function page() {
           </Tabs>
         </div>
       </div>
-      <div className="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-700 via-blue-500 to-cyan-500">
-      <Contact />
+      <div className="bg-gradient-to-r from-violet-900 via-violet-600 to-fuchsia-600">
+        <Contact />
       </div>
     </>
   );

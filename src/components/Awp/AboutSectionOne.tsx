@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
-
+import SectionTitle from "@/components/Awp/SectionTitle";
 interface AboutSectionOneProps {
   title: string;
   subTitle: string;

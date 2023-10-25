@@ -5,21 +5,28 @@ import Marques from "@/components/Marques";
 import Values from "@/components/Values";
 import Link from "next/link";
 
+import Logo from "@/app/images/page 1/Logo.png";
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="bg-gray-50">
       <Header />
       <section
         id="home"
-        className="from-green-600 via-teal-500 to-cyan-600 relative overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] pt-[80px] pb-[80px] md:pt-[300px] md:pb-[280px] "
+        className="from-green-600 via-teal-500 to-cyan-600 relative overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] pt-[80px] pb-[80px] md:pt-[140px] md:pb-[280px] "
       >
         <div
           className="wow fadeInUp mx-auto max-w-[1200px] text-center"
           data-wow-delay=".2s"
         >
-          <h1 className="text-gray-300 mb-5 text-7xl font-normal leading-tight dark:text-white sm:text-4xl sm:leading-tight md:text-7xl md:leading-tight">
-            Powerful <div className="font-bold"> Cleaning</div>
-          </h1>
+          <div className="flex flex-col items-center justify-center h-full">
+            {" "}
+            <Image src={Logo} alt="Africa West Paper" width={180} height={1000}/>
+            <h1 className=" py-4 uppercase text-gray-300 mb-5 text-7xl font-light leading-tight dark:text-white sm:text-4xl sm:leading-tight md:text-7xl md:leading-tight">
+              Powerful <div className="font-extrabold"> Cleaning</div>
+            </h1>
+          </div>
         </div>
       </section>
       {/* Centered and Overlapping Section */}

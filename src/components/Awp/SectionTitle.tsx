@@ -20,7 +20,7 @@ const SectionTitle = ({
         data-wow-delay=".1s"
         style={{ maxWidth: width, marginBottom: mb }}
       >
-        <h2 className="mb-4 text-6xl font-semibold text-blue-600 !leading-tight">
+        <h2 className="mb-4 text-6xl font-semibold text-green-600 !leading-tight">
           {title}
         </h2>
         <h2 className="mb-4 text-6xl font-extrabold text-yellow-400 !leading-tight">

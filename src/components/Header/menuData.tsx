@@ -27,7 +27,7 @@ const menuData: Menu[] = [
       {
         id: 23,
         title: "AWP Pro".toUpperCase(),
-        path: "/awp-pro",
+        path: "/awp",
         newTab: false,
       },
     ],
