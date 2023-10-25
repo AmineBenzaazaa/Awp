@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-export function Tabs({ children }) {
+export function AwpTabs({ children }) {
   function findActiveTab(a) {
     return a.reduce((accumulator, currentValue, i) => {
       if (currentValue.props.active) {
@@ -72,4 +72,4 @@ export function Tab({ children, activeTab, currentTab, setActiveTab }) {
   );
 }
 
-Tab.displayName = "Tab";
+AwpTabs.displayName = "AwpTabs";

@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import AboutSectionOne from "@/components/Awp/AboutSectionOne";
-import { Tabs, Tab } from "@/components/AWP/Tabs";
+import { AwpTabs, Tab } from "@/components/AWP/AwpTabs";
 
 import Logo from "../images/page 4/Logo.png";
 import Prod1 from "../images/page 4/Prod1.png";
@@ -77,7 +77,7 @@ export default function page() {
       </section>
       <div>
         <div className="justify-between items-center">
-          <Tabs>
+          <AwpTabs>
             <Tab component={CompProd1} className="flex flex-row" active>
               <div className="flex items-center space-x-2">
                 <Image
@@ -114,7 +114,7 @@ export default function page() {
                 />
               </div>
             </Tab>
-          </Tabs>
+          </AwpTabs>
         </div>
       </div>
       <div className="bg-green-600">
