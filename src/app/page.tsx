@@ -5,7 +5,7 @@ import Marques from "@/components/Marques";
 import Values from "@/components/Values";
 import Link from "next/link";
 
-import Logo from "../images/page 1/Logo.png";
+import Logo from "../../public/images/page 1/Logo.png";
 import Image from "next/image";
 
 export default function Home() {
