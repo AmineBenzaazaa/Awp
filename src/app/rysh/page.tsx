@@ -5,18 +5,18 @@ import AboutSectionOne from "@/components/Rysh/AboutSectionOne";
 import CustomCarousel from "@/components/CustomCarousel";
 import { Tabs, Tab } from "@/components/Rysh/Tabs";
 
-import Logo from "@/app/images/page 3/Logo.png";
-import Prod1 from "@/app/images/page 3/Prod1.png";
-import Prod2 from "@/app/images/page 3/Prod2.png";
-import Prod3 from "@/app/images/page 3/Prod3.png";
-import Prod4 from "@/app/images/page 3/Prod4.png";
+import Logo from "../images/page 3/Logo.png";
+import Prod1 from "../images/page 3/Prod1.png";
+import Prod2 from "../images/page 3/Prod2.png";
+import Prod3 from "../images/page 3/Prod3.png";
+import Prod4 from "../images/page 3/Prod4.png";
 
-import Prod5 from "@/app/images/page 3/Prod5.png";
-import Prod6 from "@/app/images/page 3/Prod6.png";
+import Prod5 from "../images/page 3/Prod5.png";
+import Prod6 from "../images/page 3/Prod6.png";
 
-import Prod7 from "@/app/images/page 3/Prod7.png";
-import Prod8 from "@/app/images/page 3/Prod8.png";
-import Prod9 from "@/app/images/page 3/Prod9.png";
+import Prod7 from "../images/page 3/Prod7.png";
+import Prod8 from "../images/page 3/Prod8.png";
+import Prod9 from "../images/page 3/Prod9.png";
 
 import Contact from "@/components/Contact";
 

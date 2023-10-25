@@ -4,12 +4,11 @@ import Image from "next/image";
 import AboutSectionOne from "@/components/Awp/AboutSectionOne";
 import { Tabs, Tab } from "@/components/AWP/Tabs";
 
-import Logo from "@/app/images/page 4/Logo.png";
-import Prod1 from "@/app/images/page 4/Prod1.png";
-import Prod2 from "@/app/images/page 4/Prod2.png";
-import Prod3 from "@/app/images/page 4/Prod3.png";
-import Prod4 from "@/app/images/page 4/Prod4.png";
-import Prod5 from "@/app/images/page 4/Prod5.png";
+import Logo from "../images/page 4/Logo.png";
+import Prod1 from "../images/page 4/Prod1.png";
+import Prod2 from "../images/page 4/Prod2.png";
+import Prod3 from "../images/page 4/Prod3.png";
+import Prod4 from "../images/page 4/Prod4.png";
 
 import Contact from "@/components/Contact";
 

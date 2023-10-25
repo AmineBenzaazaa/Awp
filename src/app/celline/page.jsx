@@ -5,20 +5,18 @@ import AboutSectionOne from "@/components/About/AboutSectionOne";
 import CustomCarousel from "@/components/CustomCarousel";
 import { Tabs, Tab } from "@/components/Tabs";
 
-import Logo from "@/app/images/page 2/Logo.png";
-import Prod1 from "@/app/images/page 2/Prod1.png";
-import Prod2 from "@/app/images/page 2/Prod2.png";
-import Prod3 from "@/app/images/page 2/Prod3.png";
-import Prod4 from "@/app/images/page 2/Prod4.png";
+import Logo from "../images/page 2/Logo.png";
+import Prod1 from "../images/page 2/Prod1.png";
+import Prod2 from "../images/page 2/Prod2.png";
+import Prod3 from "../images/page 2/Prod3.png";
+import Prod4 from "../images/page 2/Prod4.png";
 
-import Prod5 from "@/app/images/page 2/Prod5.png";
-import Prod6 from "@/app/images/page 2/Prod6.png";
+import Prod5 from "../images/page 2/Prod5.png";
+import Prod6 from "../images/page 2/Prod6.png";
 
-import Prod7 from "@/app/images/page 2/Prod7.png";
-import Prod8 from "@/app/images/page 2/Prod8.png";
-import Prod9 from "@/app/images/page 2/Prod9.png";
-
-import Slider1 from "@/app/images/page 2/Slider1.png";
+import Prod7 from "../images/page 2/Prod7.png";
+import Prod8 from "../images/page 2/Prod8.png";
+import Prod9 from "../images/page 2/Prod9.png";
 import Contact from "@/components/Contact";
 
 export default function page() {
