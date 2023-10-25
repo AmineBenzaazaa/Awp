@@ -9,7 +9,7 @@ const Features = () => {
         className="bg-primary/[.03] py-16 md:py-20 lg:py-14 "
       >
         <div className="container ">
-          <SectionTitle title="FAQs" center mb="10px"/>
+          <SectionTitle title="FAQs" paragraph="" SubTitle="" center mb="10px"/>
           <div>
             <Question
               question="Do you have experience working with businesses in my industry?"
