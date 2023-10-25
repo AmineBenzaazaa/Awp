@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import AboutSectionOne from "@/components/Awp/AboutSectionOne";
-import { AwpTabs, Tab } from "@/components/AWP/AwpTabs";
+import { AwpTabs, Tab } from "@/components/Awp/AwpTabs";
 
 import Logo from "../images/page 4/Logo.png";
 import Prod1 from "../images/page 4/Prod1.png";
