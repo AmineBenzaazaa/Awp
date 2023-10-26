@@ -5,6 +5,7 @@ import SectionTitle from "@/components/Rysh/SectionTitle";
 interface AboutSectionOneProps {
   title: string;
   subTitle: string;
+  subTitle2?: string;
   paragraph: string;
   imageSrc: string | StaticImageData;
 }
@@ -12,6 +13,7 @@ interface AboutSectionOneProps {
 const AboutSectionOne: React.FC<AboutSectionOneProps> = ({
   title,
   subTitle,
+  subTitle2,
   paragraph,
   imageSrc,
 }) => {
@@ -24,6 +26,7 @@ const AboutSectionOne: React.FC<AboutSectionOneProps> = ({
               <SectionTitle
                 title={title}
                 subTitle={subTitle}
+                subTitle2={subTitle2}
                 paragraph={paragraph}
                 mb="44px"
               />

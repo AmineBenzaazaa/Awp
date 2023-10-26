@@ -31,7 +31,7 @@ export function Tabs({ children }) {
           );
         })}
       </div>
-      <div className="grid grid-flow-col text-center text-gray-300 bg-blue-800 shadow-md px-4 md:px-20">
+      <div className="grid grid-flow-col text-center text-gray-300 bg-[#0f468f] shadow-md px-4 md:px-20">
         {" "}
         {children.map((item, i) => {
           return (

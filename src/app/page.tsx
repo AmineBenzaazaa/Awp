@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Marques from "@/components/Marques";
 import Values from "@/components/Values";
-import Link from "next/link";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import Logo from "../../public/images/page 1/Logo.png";
 import Image from "next/image";
@@ -14,12 +14,26 @@ export default function Home() {
       <Header />
       <section
         id="home"
-        className="from-[#35fa2e] via-[#3cd194] to-[#45a6ff] relative overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] pt-[80px] pb-[80px] md:pt-[140px] md:pb-[280px] "
+        className="from-[#22a45b] via-[#2f9e98] to-[#3f8ec4] relative overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] pt-[80px] pb-[80px] md:pt-[140px] md:pb-[280px] "
       >
         <div
           className="wow fadeInUp mx-auto max-w-[1200px] text-center"
           data-wow-delay=".2s"
         >
+          <div className="absolute top-[50%] right-8 transform translate-y-[-50%] flex flex-col space-y-14">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaFacebook size={32} color="white" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaTwitter size={32} color="white" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={32} color="white" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={32} color="white" />
+            </a>
+          </div>
           <div className="flex flex-col items-center justify-center h-full">
             {" "}
             <Image
@@ -40,14 +54,14 @@ export default function Home() {
           className="relative flex flex-col bg-clip-border bg-white p-20 text-gray-700 rounded-2xl shadow-lg shadow-gray-500/10"
           style={{ marginTop: "-200px" }}
         >
-          <h2 className="text-3xl font-bold tracking-tight text-green-600 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-green-600 sm:text-4xl uppercase">
             Africa West Paper.
           </h2>
           <p className="mt-6 text-lg leading-8 text-green-600">
             est un groupe spécialisé dans la fabrication et la commercialisation
             <br /> de produits d’hygiène et d’essuyage en papier.
           </p>
-          <p className="mt-6 text-center max-w-[570px] text-lg leading-8 text-gray-500">
+          <p className="mt-6 text-center max-w-[770px] text-lg leading-8 text-gray-500">
             Grâce à notre savoir-faire et à notre expertise, nous déclinons le
             papier sous différentes formes pour développer une large gamme de
             solutions d’hygiène optimales à destination de tout usage,
@@ -64,7 +78,7 @@ export default function Home() {
       <Marques />
       <section
         id="home"
-        className="from-green-600 via-teal-500 to-cyan-600 relative overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] py-[20px] md:pt-[100px] md:pb-[20px] "
+        className="from-[#22a45b] via-[#2f9e98] to-[#3f8ec4] relative overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] py-[20px] md:pt-[100px] md:pb-[20px] "
       >
         <Values />
         <Contact />

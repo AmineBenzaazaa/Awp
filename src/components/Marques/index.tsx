@@ -1,36 +1,36 @@
 "use client";
 import React from "react";
+import { Link } from "react-router-dom";
 
-const bgGreen500 = "bg-green-500"; // Reusable background color
 
 const Marques = () => {
   const teamMembers = [
     {
-      name: "John Doe",
-      role: "CEO",
+      name: "celline",
+      // role: "CEO",
       description:
         "Celline vous offre tout le confort d'un papier de haute qualité pour une meilleure hygiène quotidienne.",
       imageUrl: "/marques/Celline.PNG",
       linkColor: "text-blue-500",
-      bgColor: bgGreen500, // Include the background color here
+      bgColor: "bg-white", // Include the background color here
     },
     {
-      name: "Jane Smith",
-      role: "Designer",
+      name: "rysh",
+      // role: "Designer",
       description:
         "Rysh offre l'accès à une large gamme de papiers qui participe à l'hygiène quotidienne de toute la famille.",
       imageUrl: "/marques/Rysh.PNG",
       linkColor: "text-purple-500",
-      bgColor: bgGreen500, // Include the background color here
+      bgColor: "bg-white", // Include the background color here
     },
     {
-      name: "Bob Johnson",
-      role: "Developer",
+      name: "awp",
+      // role: "Developer",
       description:
         "Africa west paper a conçu une gamme spéciale de produits multi-usages pour le nettoyage professionnel.",
       imageUrl: "/marques/AWP.png",
       linkColor: "text-green-500",
-      bgColor: bgGreen500, // Include the background color here
+      bgColor: "bg-[#1f9356]", // Include the background color here
     },
   ];
 
@@ -51,12 +51,12 @@ const Marques = () => {
                 />
                 <div className="px-6 py-4">
                   <p className="mt-2 text-gray-700">{member.description}</p>
-                  <div
-                    // to={`/${index}`} // Replace with your route
+                  <a
+                    href={`/${member.name}`} 
                     className={`mt-4 inline-block  ${member.linkColor} hover:underline cursor-pointer`}
                   >
                     En savoir plus
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
