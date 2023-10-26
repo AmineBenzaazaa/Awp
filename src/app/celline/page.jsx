@@ -266,10 +266,10 @@ export default function page() {
       <div>
         <div className="items-center">
           <Tabs>
-            <Tab component={CompProd7} className="flex flex-row" active>
+            <Tab component={CompProd10} className="flex flex-row" active>
               <div className="flex items-center space-x-2 bg-white px-10">
                 <Image
-                  src={Prod7}
+                  src={Prod10}
                   className="w-full h-60 object-cover object-center"
                 />
               </div>
