@@ -6,6 +6,7 @@ import Values from "@/components/Values";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import Logo from "../../public/images/page 1/Logo.png";
+import WBG from "@/app/images/Objet dynamique vectoriel copie 9.png";
 import Image from "next/image";
 
 export default function Home() {
@@ -20,6 +21,9 @@ export default function Home() {
           className="wow fadeInUp mx-auto max-w-[1200px] text-center"
           data-wow-delay=".2s"
         >
+          <div className="absolute top-[60%] right-0 transform translate-y-[-50%] flex flex-col space-y-14">
+            <Image src={WBG} alt="Africa West Paper" height={600}/>
+          </div>
           <div className="absolute top-[50%] right-8 transform translate-y-[-50%] flex flex-col space-y-14">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={32} color="white" />
@@ -80,6 +84,9 @@ export default function Home() {
         id="home"
         className="from-[#22a45b] via-[#2f9e98] to-[#3f8ec4] relative overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] py-[20px] md:pt-[100px] md:pb-[20px] "
       >
+        <div className="absolute top-[80%] right-0 transform translate-y-[-50%] flex flex-col space-y-14">
+            <Image src={WBG} alt="Africa West Paper" height={600}/>
+          </div>
         <Values />
         <Contact />
       </section>
