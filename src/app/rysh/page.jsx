@@ -117,7 +117,7 @@ export default function page() {
     <>
       <section
         id="home"
-        className="bg-gradient-to-r from-violet-900 via-violet-600 to-fuchsia-600 pt-[40px] pb-[60px] md:pt-[80px] md:pb-[60px] "
+        className="bg-gradient-to-r from-[#8800ff] via-[#6c04fe] to-[#4307ff]  pt-[40px] pb-[60px] md:pt-[180px] md:pb-[170px]"
       >
         <div
           className="wow fadeInUp mx-auto max-w-[1200px] text-center"
