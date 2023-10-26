@@ -126,9 +126,9 @@ const Header = () => {
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
-                              {menuItem.submenu.map((submenuItem: { path: string | UrlObject; id: Key | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | null | undefined; }) => (
+                              {menuItem.submenu && menuItem.submenu.map((submenuItem) => (
                                 <Link
-                                  href={submenuItem.path}
+                                  href={submenuItem.path??''}
                                   key={submenuItem.id}
                                   className="block rounded py-2.5 text-md text-dark hover:opacity-70 text-gray-800 lg:px-3"
                                 >
