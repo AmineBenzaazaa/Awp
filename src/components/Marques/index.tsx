@@ -28,7 +28,7 @@ const Marques = () => {
       // role: "Developer",
       description:
         "Africa west paper a conçu une gamme spéciale de produits multi-usages pour le nettoyage professionnel.",
-      imageUrl: "/marques/AWP.png",
+      imageUrl: "/marques/Awp.png",
       linkColor: "text-green-500",
       bgColor: "bg-[#1f9356]", // Include the background color here
     },
