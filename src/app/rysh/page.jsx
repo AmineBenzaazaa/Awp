@@ -27,7 +27,7 @@ export default function page() {
         title="Papier"
         subTitle="ESSUIE-TOUT"
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime velit cumque deleniti, blanditiis minima doloremque alias odit, accusantium ut, iure labore ad minus provident expedita veniam nihil eligendi? Nisi, voluptates."
-        imageSrc="../images/page 3/Prod1.png"
+        imageSrc={Prod1}
       />
     </div>
   );
@@ -37,7 +37,7 @@ export default function page() {
         title="Papier"
         subTitle="ESSUIE-TOUT"
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime velit cumque deleniti, blanditiis minima doloremque alias odit, accusantium ut, iure labore ad minus provident expedita veniam nihil eligendi? Nisi, voluptates."
-        imageSrc="../images/page 3/Prod2.png"
+        imageSrc={Prod2}
       />
     </div>
   );
@@ -47,7 +47,7 @@ export default function page() {
         title="Papier"
         subTitle="ESSUIE-TOUT"
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime velit cumque deleniti, blanditiis minima doloremque alias odit, accusantium ut, iure labore ad minus provident expedita veniam nihil eligendi? Nisi, voluptates."
-        imageSrc="../images/page 3/Prod3.png"
+        imageSrc={Prod3}
       />
     </div>
   );
@@ -57,7 +57,7 @@ export default function page() {
         title="Papier"
         subTitle="ESSUIE-TOUT"
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime velit cumque deleniti, blanditiis minima doloremque alias odit, accusantium ut, iure labore ad minus provident expedita veniam nihil eligendi? Nisi, voluptates."
-        imageSrc="../images/page 3/Prod4.png"
+        imageSrc={Prod4}
       />
     </div>
   );
@@ -67,7 +67,7 @@ export default function page() {
         title="Papier"
         subTitle="ESSUIE-TOUT"
         paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime velit cumque deleniti, blanditiis minima doloremque alias odit, accusantium ut, iure labore ad minus provident expedita veniam nihil eligendi? Nisi, voluptates."
-        imageSrc="../images/page 3/Prod5.png"
+        imageSrc={Prod5}
       />
     </div>
   );

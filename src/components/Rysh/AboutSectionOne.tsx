@@ -1,12 +1,12 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import SectionTitle from "@/components/Rysh/SectionTitle";
 
 interface AboutSectionOneProps {
   title: string;
   subTitle: string;
   paragraph: string;
-  imageSrc: string;
+  imageSrc: string | StaticImageData;
 }
 
 const AboutSectionOne: React.FC<AboutSectionOneProps> = ({

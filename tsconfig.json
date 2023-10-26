@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Tabs.jsx", "src/app/celline/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Tabs.jsx", "src/app/celline/page.jsx", "src/app/rysh/page.jsx", "src/app/awp/page.jsx"],
   "exclude": ["node_modules"]
 }

@@ -12,13 +12,25 @@ export function AwpTabs({ children }) {
   }
 
   function tabValidator(tab) {
-    return tab.type.displayName === "Tab" ? true : false;
+    return tab.type.name === "Tab" ? true : false;
   }
 
   const [activeTab, setActiveTab] = useState(findActiveTab(children));
 
   return (
     <>
+    <div className="p-1">
+        {children.map((item, i) => {
+          return (
+            <div
+            key={`content-${i}`}
+            className={` ${i === activeTab ? "visible" : "hidden"}`}
+            >
+              {item.props.component}
+            </div>
+          );
+        })}
+      </div>
       <div className="grid grid-flow-col text-center text-gray-300 bg-green-600 shadow-md px-4 md:px-20">
         {" "}
         {children.map((item, i) => {
@@ -38,18 +50,7 @@ export function AwpTabs({ children }) {
           );
         })}
       </div>
-      <div className="p-1">
-        {children.map((item, i) => {
-          return (
-            <div
-            key={`content-${i}`}
-            className={` ${i === activeTab ? "visible" : "hidden"}`}
-            >
-              {item.props.component}
-            </div>
-          );
-        })}
-      </div>
+      
     </>
   );
 }
