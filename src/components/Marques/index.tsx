@@ -37,7 +37,7 @@ const Marques = () => {
   return (
     <section className="py-16" id="marques">
       <div className="container mx-auto text-center">
-        <h2 className="text-5xl font-bold text-green-600">
+        <h2 className="text-5xl font-bold text-green-600 uppercase">
           Découvrez nos marques
         </h2>
         <div className="flex flex-wrap justify-center mt-8">
