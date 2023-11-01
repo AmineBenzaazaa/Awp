@@ -22,16 +22,16 @@ const SectionTitle = ({
         data-wow-delay=".1s"
         style={{ maxWidth: width, marginBottom: mb }}
       >
-        <h2 className="text-7xl font-meduim text-[#672a81] !leading-tight">
+        <h2 className="text-5xl sm:text-7xl font-meduim text-[#672a81] !leading-tight">
           {title}
         </h2>
-        <h2 className="text-7xl font-extrabold text-[#672a81] !leading-tight uppercase">
+        <h2 className="text-5xl sm:text-7xl font-extrabold text-[#672a81] !leading-tight uppercase">
           {subTitle}
         </h2>
-        <h2 className="text-7xl font-light text-[#ca962b] !leading-tight uppercase">
+        <h2 className="text-5xl sm:text-7xl font-light text-[#ca962b] !leading-tight uppercase">
           {subTitle2}
         </h2>
-        <p className="text-md text-gray-500 !leading-relaxed text-body-color md:text-lg">
+        <p className="text-sm sm:text-md py-6 text-gray-500 !leading-relaxed text-body-color md:text-lg">
           {paragraph}
         </p>
       </div>

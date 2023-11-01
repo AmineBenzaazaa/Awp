@@ -20,7 +20,7 @@ const AboutSectionOne: React.FC<AboutSectionOneProps> = ({
   return (
     <section className="p-10">
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-10">
+        <div className="border-b border-body-color/[.15] pb-16 border-white/[.15] md:pb-20 lg:pb-10">
           <div className="flex flex-wrap items-center px-5 md:px-30">
             <div className="w-full lg:w-1/2 pl-20">
               <SectionTitle

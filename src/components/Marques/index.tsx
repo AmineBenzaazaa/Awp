@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { Link } from "react-router-dom";
-
+import Link from "next/link";
 
 const Marques = () => {
   const teamMembers = [
@@ -43,16 +42,18 @@ const Marques = () => {
         <div className="flex flex-wrap justify-center mt-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-              <div className="shadow-lg rounded-lg overflow-hidden">
-                <img
-                  src={member.imageUrl}
-                  alt={member.name}
-                  className={`w-full h-60 object-cover object-center ${member.bgColor}`}
-                />
+              <div className="shadow-2xl rounded-lg overflow-hidden">
+                <Link href={`/${member.name}`}>
+                  <img
+                    src={member.imageUrl}
+                    alt={member.name}
+                    className={`w-full h-60 object-cover object-center ${member.bgColor}`}
+                  />
+                </Link>
                 <div className="px-6 py-4">
                   <p className="mt-2 text-gray-700">{member.description}</p>
                   <a
-                    href={`/${member.name}`} 
+                    href={`/${member.name}`}
                     className={`mt-4 inline-block  ${member.linkColor} hover:underline cursor-pointer`}
                   >
                     En savoir plus

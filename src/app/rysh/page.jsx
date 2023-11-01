@@ -160,7 +160,7 @@ export default function page() {
             {" "}
             {/* Centering div */}
             <Image src={Logo} alt="Celline" width={780} height={1700} />
-            <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-4xl text-white">
+            <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-4xl text-white">
               Rysh offre l’accès à une large gamme de papiers qui participe à{" "}
               <br />
               <div className="font-light">
@@ -278,7 +278,7 @@ export default function page() {
         </div>
       </div>
       <div className="px-40 py-4">
-        <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#672a81]">
+        <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#672a81]">
           Gamme <span className="font-light">Celline</span>
         </h1>
       </div>

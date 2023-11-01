@@ -94,7 +94,7 @@ export default function page() {
           </div>
           <div className="relative flex flex-col items-center justify-center h-full">
             <Image src={Logo} alt="Celline" width={580} height={1000} />
-            <h1 class="my-12 text-2xl font-extrabold tracking-tight leading-none md:text-4xl text-white">
+            <h1 className="my-12 text-2xl font-extrabold tracking-tight leading-none md:text-4xl text-white">
               Africa west paper a conçu une gamme spéciale de produits
               <div className="font-light">
                 multi-usages pour le nettoyage professionnel.
@@ -155,7 +155,7 @@ export default function page() {
         </div>
       </div>
       <div className="px-40 py-4">
-        <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#1f9356]">
+        <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#1f9356]">
           Gamme <span className="font-light">Celline</span>
         </h1>
       </div>

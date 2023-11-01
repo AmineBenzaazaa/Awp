@@ -1,5 +1,14 @@
 "use client";
 import Image from "next/image";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -21,62 +30,12 @@ import Prod9 from "../images/page 2/Mouchoir 300F 2 pli.jpg";
 import Prod10 from "../images/page 2/Mouchoir 300F 3 pli.jpg";
 
 import Tableimg from "../images/page 2/Table.png";
-
-import Contact from "@/components/Contact";
+import Test from '@/components/test'
 
 export default function page() {
-  const CompProd1 = (
-    <div className="">
-      <AboutSectionOne
-        title="Papier"
-        subTitle="Hygiénique"
-        paragraph="Avec sa triple épaisseur et sa texture hyper absorbante, le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.
-        Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
-        Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
-        Chaque rouleau est méticuleusement élaboré 
-        "
-        imageSrc={Prod1}
-      />
-    </div>
-  );
-  const CompProd2 = (
-    <div className="">
-      <AboutSectionOne
-        title="Papier"
-        subTitle="Hygiénique"
-        paragraph="Avec sa triple épaisseur et sa texture hyper absorbante, le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.
-        Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
-        Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
-        Chaque rouleau est méticuleusement élaboré 
-        "
-        imageSrc={Prod2}
-      />
-    </div>
-  );
-  const CompProd3 = (
-    <div className="">
-      <AboutSectionOne
-        title="Papier"
-        subTitle="Hygiénique"
-        paragraph="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime velit cumque deleniti, blanditiis minima doloremque alias odit, accusantium ut, iure labore ad minus provident expedita veniam nihil eligendi? Nisi, voluptates."
-        imageSrc={Prod3}
-      />
-    </div>
-  );
-  const CompProd4 = (
-    <div className="">
-      <AboutSectionOne
-        title="Papier"
-        subTitle="Hygiénique"
-        paragraph="Avec sa triple épaisseur et sa texture hyper absorbante, le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.
-        Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
-        Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
-        Chaque rouleau est méticuleusement élaboré 
-        "
-        imageSrc={Prod4}
-      />
-    </div>
-  );
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [activeSlide, setActiveSlide] = useState(0); // Initialize activeSlide
+
   const CompProd5 = (
     <div className="">
       <AboutSectionOne
@@ -148,6 +107,7 @@ export default function page() {
 
   return (
     <>
+
       <section
         id="home"
         className="bg-gradient-to-r from-[#00feff] via-[#019cf8] to-[#0045f3]  pt-[40px] pb-[60px] md:pt-[180px] md:pb-[200px]"
@@ -172,10 +132,9 @@ export default function page() {
           </div>
           <div className="flex flex-col items-center justify-center h-full">
             {" "}
-            {/* Centering div */}
             <Image src={Logo} alt="Celline" width={480} height={1300} />
-            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-              <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-4xl text-white">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+              <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-4xl text-white">
                 Celline vous offre tout le confort d’un papier de haute <br />
                 <div className="font-light">
                   qualité pour une meilleure hygiène quotidienne.
@@ -185,7 +144,111 @@ export default function page() {
           </div>
         </div>
       </section>
-      <div>
+      <Test />
+      {/* <Swiper
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+        }}
+        loop={true}
+        spaceBetween={10}
+        navigation={true}
+        thumbs={{
+          swiper: thumbsSwiper && !thumbsSwiper ? thumbsSwiper : null,
+        }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2"
+        activeIndex={activeSlide}
+      >
+        <SwiperSlide>
+          <AboutSectionOne
+            title="Papier"
+            subTitle="Hygiénique"
+            paragraph="Description for Slide 1"
+            imageSrc={Prod1}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <AboutSectionOne
+            title="Papier"
+            subTitle="Hygiénique"
+            paragraph="Description for Slide 2"
+            imageSrc={Prod2}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <AboutSectionOne
+            title="Papier"
+            subTitle="Hygiénique"
+            paragraph="Description for Slide 3"
+            imageSrc={Prod3}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <AboutSectionOne
+            title="Papier"
+            subTitle="Hygiénique"
+            paragraph="Description for Slide 4"
+            imageSrc={Prod4}
+          />
+        </SwiperSlide>
+      </Swiper>
+      <Swiper
+        onClick={setThumbsSwiper}
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+          background: "#0f468f",
+        }}
+        loop={true}
+        thumbs={{
+          swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+        }}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        navigation={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <Image
+            alt=""
+            src={Prod1}
+            className="w-full h-60 object-cover object-center"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            alt=""
+            src={Prod2}
+            className="w-full h-60 object-cover object-center"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            alt=""
+            src={Prod3}
+            className="w-full h-60 object-cover object-center"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            alt=""
+            src={Prod4}
+            className="w-full h-60 object-cover object-center"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            alt=""
+            src={Prod5}
+            className="w-full h-60 object-cover object-center"
+          />
+        </SwiperSlide>
+      </Swiper> */}
+      {/* <div>
         <div className="justify-between items-center">
           <Tabs>
             <Tab component={CompProd2}>
@@ -294,7 +357,7 @@ export default function page() {
         </div>
       </div>
       <div className="px-40 py-4">
-        <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#0f468f]">
+        <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#0f468f]">
           Gamme <span className="font-light">Celline</span>
         </h1>
       </div>
@@ -305,7 +368,7 @@ export default function page() {
       </div>
       <div className="bg-gradient-to-r from-[#00feff] via-[#019cf8] to-[#0045f3] ">
         <Contact />
-      </div>
+      </div> */}
     </>
   );
 }
