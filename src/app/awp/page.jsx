@@ -72,7 +72,7 @@ export default function page() {
     <>
       <section
         id="home"
-        className="relative bg-[#1f9356] pt-[40px] pb-[60px] md:pt-[180px] md:pb-[120px]"
+        className="relative bg-[#1f9257] pt-[40px] pb-[60px] md:pt-[180px] md:pb-[120px]"
       >
         <div
           className="wow fadeInUp mx-auto max-w-[1200px] text-center"

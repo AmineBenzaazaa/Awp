@@ -4,15 +4,18 @@ import Image from "next/image";
 import Logo from "@/app/images/Objet dynamique vectoriel copie 3.png";
 const Contact = () => {
   return (
-    <div id="contact" className="flex flex-row container">
-      <section className="w-1/2 px-12 flex justify-center items-center">
+    <div
+      id="contact"
+      className="flex md:flex-row flex-col mx-auto md:space-x-8 sm:flex-row container"
+    >
+      <section className="w-1/1 md:1/2 px-12 flex justify-center items-center">
         {" "}
         {/* Centered using flex */}
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <Image src={Logo} alt="Africa West Paper" width={280} height={1000} />
+        <div className="py-8 lg:py-16 px-4 mx-auto  md:max-w-screen-md">
+          <Image src={Logo} alt="Africa West Paper" width={280} height={700} />
         </div>
       </section>
-      <section className="w-1/2 px-12">
+      <section className="w-1/1 md:1/2 px-12">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-left text-white">
             Contactez-nous

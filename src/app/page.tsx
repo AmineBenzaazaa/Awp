@@ -27,7 +27,7 @@ export default function Home() {
           <div className="absolute top-[60%] right-0 transform translate-y-[-50%] flex flex-col space-y-14">
             <Image src={WBG} alt="Africa West Paper" height={600} />
           </div>
-          <div className="absolute top-[50%] right-8 transform translate-y-[-50%] flex flex-col space-y-14">
+          <div className="hidden md:flex absolute top-[50%] right-8 transform translate-y-[-50%] flex-col space-y-14">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={32} color="white" />
             </a>
@@ -49,17 +49,17 @@ export default function Home() {
               width={180}
               height={1000}
             />
-            <h1 className=" py-4 uppercase mb-5 text-7xl font-light leading-tight text-white sm:text-4xl sm:leading-tight md:text-7xl md:leading-tight">
+            <h1 className=" py-4 uppercase mb-5 text-xl sm:text-7xl font-light leading-tight text-white  sm:leading-tight md:text-7xl md:leading-tight">
               Powerful <div className="font-extrabold"> Cleaning</div>
             </h1>
           </div>
         </div>
       </section>
       {/* Centered and Overlapping Section */}
-      <section className="flex justify-center items-center text-center text-green-500 z-20">
+      <section className="flex justify-center items-center text-center text-green-500 z-20 mx-6 sm:mx-0">
         <div
           className="relative flex flex-col bg-clip-border bg-white p-20 text-gray-700 rounded-2xl shadow-lg shadow-gray-500/10"
-          style={{ marginTop: "-200px" }}
+          style={{ marginTop: "-100px" }}
         >
           <h2 className="text-3xl font-bold tracking-tight text-green-600 sm:text-4xl uppercase">
             Africa West Paper.
@@ -68,7 +68,7 @@ export default function Home() {
             est un groupe spécialisé dans la fabrication et la commercialisation
             <br /> de produits d’hygiène et d’essuyage en papier.
           </p>
-          <p className="mt-6 text-center max-w-[770px] text-lg leading-8 text-gray-500">
+          <p className="mt-6 text-center max-w-[770px] text-sm sm:text-md leading-8 text-gray-500">
             Grâce à notre savoir-faire et à notre expertise, nous déclinons le
             papier sous différentes formes pour développer une large gamme de
             solutions d’hygiène optimales à destination de tout usage,

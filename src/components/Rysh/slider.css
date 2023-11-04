@@ -15,16 +15,16 @@
 
 .indicator {
   cursor: pointer;
-  background: #0f468f;
+  background: #652b80;
   margin: 0;
 }
 
 .indicator.active {
   color: #fff;
 }
-/* .indicators {
-  background-color: #0f468f;
-} */
+.indicators {
+  background-color: #652b80;
+}
 button{
   top: 116%;
   margin: 10px;
