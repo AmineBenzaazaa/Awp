@@ -33,10 +33,6 @@ import Slideshow from "@/components/Celline/Slideshow";
 import Contact from "@/components/Contact";
 
 
-interface NavigationItemProps {
-  href: string;
-  label: string;
-}
 
 export default function page() {
   const Hygienique = [
@@ -133,6 +129,10 @@ export default function page() {
     },
   ];
   
+  interface NavigationItemProps {
+    href: string;
+    label: string;
+  }
   
   const NavigationItem: React.FC<NavigationItemProps> = ({ href, label }) => (
      <li className="mr-2">
