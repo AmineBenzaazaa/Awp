@@ -20,8 +20,7 @@ interface SlideshowProps {
 }
 
 const Slideshow: React.FC<SlideshowProps> = ({ slides, trustBadge }) => {
-  const isMobile = window.innerWidth <= 768; // Define your mobile breakpoint
-
+  
   const indicators = (index?: number) => (
     index !== undefined && (
       <div className="indicator">

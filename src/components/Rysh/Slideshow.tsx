@@ -20,16 +20,13 @@ interface SlideshowProps {
 }
 
 const Slideshow: React.FC<SlideshowProps> = ({ slides, trustBadge }) => {
-  const isMobile = window.innerWidth <= 768; // Define your mobile breakpoint
-
+ 
   const indicators = (index?: number) => (
     index !== undefined && (
       <div className="indicator">
-        {isMobile && index !== 0 ? null : (
-          <div className="flex flex-row justify-center p-8 rounded-lg text-sm cursor-pointer">
-            <Image alt="" width={180} src={slides[index].imageSrc} />
+          <div className="flex justify-center p-8 rounded-lg text-sm cursor-pointer ">
+            <Image alt="" width={240} src={slides[index].imageSrc} />
           </div>
-        )}
       </div>
     )
   );

@@ -32,6 +32,12 @@ import Prod10 from "../images/page 2/Mouchoir 300F 3 pli.jpg";
 import Slideshow from "@/components/Celline/Slideshow";
 import Contact from "@/components/Contact";
 
+
+interface NavigationItemProps {
+  href: string;
+  label: string;
+}
+
 export default function page() {
   const Hygienique = [
     {
@@ -126,9 +132,10 @@ export default function page() {
       imageSrc: Prod10,
     },
   ];
-
-  const NavigationItem = ({ href, label }) => (
-    <li className="mr-2">
+  
+  
+  const NavigationItem: React.FC<NavigationItemProps> = ({ href, label }) => (
+     <li className="mr-2">
       <Link
         href={href}
         className="inline-flex items-center justify-center p-4 hover:text-[#0f4690] hover:bg-white rounded-full px-5 py-2 group active"
