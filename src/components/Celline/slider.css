@@ -15,7 +15,7 @@
 
 .indicator {
   cursor: pointer;
-  background: #0f468f;
+  background: #0f4690;
   margin: 0;
 }
 
@@ -23,7 +23,7 @@
   color: #fff;
 }
 .indicators {
-  background-color: #0f468f;
+  background-color: #0f4690;
 }
 button{
   top: 116%;

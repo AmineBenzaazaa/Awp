@@ -1,21 +1,35 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import AboutSectionOne from "./About/AboutSectionOne";
-import Image from "next/image";
+import AboutSectionOne from "../About/AboutSectionOne";
+import Image, { StaticImageData } from "next/image";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
-const Slideshow = ({ slides, trustBadge }) => {
+import './slider.css'
+
+interface Slide {
+  title: string;
+  subTitle: string;
+  paragraph: string;
+  imageSrc: string | StaticImageData; 
+}
+
+interface SlideshowProps {
+  slides: Slide[];
+  trustBadge: boolean; 
+}
+
+const Slideshow: React.FC<SlideshowProps> = ({ slides, trustBadge }) => {
   const isMobile = window.innerWidth <= 768; // Define your mobile breakpoint
 
-  const indicators = (index) => (
-    <div className="indicator">
-      {isMobile && index !== 0 ? null : (
-        <div className="flex flex-row justify-center p-8 rounded-lg text-sm cursor-pointer">
-          <Image alt="" width={180} src={slides[index].imageSrc} />
-        </div>
-      )}
-    </div>
+  const indicators = (index?: number) => (
+    index !== undefined && (
+      <div className="indicator">
+          <div className="flex justify-center p-8 rounded-lg text-sm cursor-pointer ">
+            <Image alt="" width={240} src={slides[index].imageSrc} />
+          </div>
+      </div>
+    )
   );
 
   return (
@@ -42,17 +56,17 @@ const Slideshow = ({ slides, trustBadge }) => {
           <BsArrowLeft size={28} color="white" />
         </button>
       }
-      indicators={indicators}
+      indicators={(index) => indicators(index)}
     >
       {slides.map((slide, index) => (
         <div className="each-slide-effect" key={index}>
-          <AboutSectionOne
+          {<AboutSectionOne
             title={slide.title}
             subTitle={slide.subTitle}
             paragraph={slide.paragraph}
             imageSrc={slide.imageSrc}
             trustBadge={trustBadge}
-          />
+          />}
         </div>
       ))}
     </Slide>

@@ -131,12 +131,17 @@ export default function page() {
             {" "}
             {/* Centering div */}
             <Image src={Logo} alt="Celline" width={780} height={1700} />
-            <h1 className="py-6 text-2xl font-extrabold tracking-tight leading-none md:text-3xl text-white">
-              Rysh offre l’accès à une large gamme de papiers qui participe à{" "}
-              <div className="font-light py-4">
-                l’hygiène quotidienne de toute la famille.
+            <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-4xl text-white">
+              <br />
+              <div className="font-light">
               </div>
             </h1>
+            <h1 className="py-6 text-2xl font-extrabold tracking-tight leading-none md:text-3xl text-white">
+            Rysh offre l’accès à une large gamme de papiers qui participe à{" "}
+                <div className="font-light py-4">
+                l’hygiène quotidienne de toute la famille.
+                </div>
+              </h1>
           </div>
         </div>
       </section>

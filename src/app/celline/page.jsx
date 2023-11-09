@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import Link from "next/link";
 
 // Import Swiper styles
 import "swiper/css";
@@ -28,7 +29,7 @@ import Prod8 from "../images/page 2/Mouchoir 300F.jpg";
 import Prod9 from "../images/page 2/Mouchoir 300F 2 pli.jpg";
 import Prod10 from "../images/page 2/Mouchoir 300F 3 pli.jpg";
 
-import Slideshow from "@/components/Slideshow";
+import Slideshow from "@/components/Celline/Slideshow";
 import Contact from "@/components/Contact";
 
 export default function page() {
@@ -36,36 +37,53 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "Hygiénique",
-      paragraph:
-        "Avec sa triple épaisseur et sa texture hyper absorbante, le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation. Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale. Chaque rouleau est méticuleusement élaboré ",
+      paragraph: `Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose, le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.\n\n
+      \n\n
+      Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
+      \n\n
+      Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
+      \n\n
+      Chaque rouleau est méticuleusement élaboré`,
       imageSrc: Prod1,
     },
     {
       title: "Papier",
       subTitle: "Hygiénique",
-      paragraph:
-        "Avec sa triple épaisseur et sa texture hyper absorbante, le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation. Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale. Chaque rouleau est méticuleusement élaboré ",
+      paragraph: `Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.\n\n
+      \n\n
+      Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
+    Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
+    Chaque rouleau est méticuleusement élaboré`,
       imageSrc: Prod2,
     },
     {
       title: "Papier 3",
       subTitle: "Hygiénique",
-      paragraph:
-        "Avec sa triple épaisseur et sa texture hyper absorbante, le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation. Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale. Chaque rouleau est méticuleusement élaboré ",
+      paragraph: `Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.
+
+      Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
+      Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
+      Chaque rouleau est méticuleusement élaboré `,
       imageSrc: Prod3,
     },
     {
       title: "Papier 3",
       subTitle: "Hygiénique",
-      paragraph:
-        "Avec sa triple épaisseur et sa texture hyper absorbante, le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation. Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale. Chaque rouleau est méticuleusement élaboré ",
+      paragraph: `Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.
+
+      Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
+      Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
+      Chaque rouleau est méticuleusement élaboré `,
       imageSrc: Prod4,
     },
     {
       title: "Papier 3",
       subTitle: "Hygiénique",
-      paragraph:
-        "Avec sa triple épaisseur et sa texture hyper absorbante, le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation. Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale. Chaque rouleau est méticuleusement élaboré ",
+      paragraph: `Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.
+
+      Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
+      Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
+      Chaque rouleau est méticuleusement élaboré `,
       imageSrc: Prod5,
     },
   ];
@@ -109,6 +127,17 @@ export default function page() {
     },
   ];
 
+  const NavigationItem = ({ href, label }) => (
+    <li className="mr-2">
+      <Link
+        href={href}
+        className="inline-flex items-center justify-center p-4 hover:text-[#0f4690] hover:bg-white rounded-full px-5 py-2 group active"
+      >
+        {label}
+      </Link>
+    </li>
+  );
+
   return (
     <>
       <section
@@ -119,20 +148,7 @@ export default function page() {
           className="wow fadeInUp mx-auto max-w-[1200px] text-center"
           data-wow-delay=".2s"
         >
-          <div className="hidden md:flex absolute top-[50%] right-8 transform translate-y-[-50%] flex-col space-y-14">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaFacebook size={32} color="white" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaTwitter size={32} color="white" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaInstagram size={32} color="white" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin size={32} color="white" />
-            </a>
-          </div>
+          <div className="absolute top-[40%] right-8 transform translate-y-[-50%] flex flex-col space-y-14"></div>
           <div className="flex flex-col items-center justify-center h-full">
             {" "}
             <Image src={Logo} alt="Celline" width={380} height={1100} />
@@ -143,21 +159,7 @@ export default function page() {
                   qualité pour une meilleure hygiène quotidienne.
                 </div>
               </h1>
-              <div className="hidden md:block absolute top-[50%] right-8 transform translate-y-[-50%]  flex-col space-y-14">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaFacebook size={32} color="white" />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaTwitter size={32} color="white" />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram size={32} color="white" />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin size={32} color="white" />
-                </a>
-              </div>
-              <div className="block md:hidden flex-row space-x-8 mx-auto justify-center">
+              <div className="hidden md:flex absolute top-[50%] right-8 transform translate-y-[-50%] flex-col space-y-14">
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <FaFacebook size={32} color="white" />
                 </a>
@@ -175,9 +177,22 @@ export default function page() {
           </div>
         </div>
       </section>
-      <Slideshow trustBadge={true} slides={Hygienique} />
-      <Slideshow trustBadge={false} slides={EssuiteTout} />
-      <Slideshow trustBadge={true} slides={Mouchoirs} />
+      <div className="w-full bg-[#0f4690] py-2 ">
+        <ul className="flex max-w-min flex-row -mb-px  text-lg font-medium text-center text-white container mx-auto">
+          <NavigationItem href="#Hygienique" label="Hygienique" />
+          <NavigationItem href="#EssuiteTout" label="EssuiteTout" />
+          <NavigationItem href="#Mouchoirs" label="Mouchoirs" />
+        </ul>
+      </div>
+      <div id="Hygienique">
+        <Slideshow trustBadge={true} slides={Hygienique} />
+      </div>
+      <div id="EssuiteTout">
+        <Slideshow trustBadge={false} slides={EssuiteTout} />
+      </div>
+      <div id="Mouchoirs">
+        <Slideshow trustBadge={true} slides={Mouchoirs} />
+      </div>
       <div className="bg-gradient-to-r from-[#00feff] via-[#019cf8] to-[#0045f3]">
         <Contact />
       </div>

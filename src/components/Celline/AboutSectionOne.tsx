@@ -1,6 +1,6 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "./SectionTitle";
 
 import TrustBadge from "@/app/images/TrustBadge.png";
 
@@ -20,7 +20,7 @@ const AboutSectionOne: React.FC<AboutSectionOneProps> = ({
   trustBadge,
 }) => {
   return (
-    <section className="p-2 sm:p-10">
+    <section className="p-2">
       <div className="w-full">
         <div className="border-b border-white/[.15] md:pb-10 lg:pb-4">
           <div className="flex flex-wrap items-center px-5 md:px-30">
@@ -34,7 +34,7 @@ const AboutSectionOne: React.FC<AboutSectionOneProps> = ({
                 title={title}
                 subTitle={subTitle}
                 paragraph={paragraph}
-                mb="4px"
+                mb="44px"
               />
             </div>
             <div className="w-full px-4 lg:w-1/2 justify-center items-center">
