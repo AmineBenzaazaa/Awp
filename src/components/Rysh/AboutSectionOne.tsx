@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import SectionTitle from "./SectionTitle";
 
 import TrustBadge from "@/app/images/TrustBadge.png";
@@ -8,7 +8,7 @@ interface AboutSectionOneProps {
   title: string;
   subTitle: string;
   paragraph: string;
-  imageSrc: string;
+  imageSrc: string | StaticImageData; 
   trustBadge: boolean;
 }
 
@@ -34,7 +34,7 @@ const AboutSectionOne: React.FC<AboutSectionOneProps> = ({
                 title={title}
                 subTitle={subTitle}
                 paragraph={paragraph}
-                mb="44px"
+                mb="4px"
               />
             </div>
             <div className="w-full px-4 lg:w-1/2 justify-center items-center">

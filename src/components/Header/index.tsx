@@ -49,11 +49,16 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent bg-gray-900 bg-opacity-20 ${
-          sticky
-            ? "!fixed !z-[9999] shadow-sticky backdrop-blur-sm !transition "
-            : "absolute"
-        }`}
+        className={`header top-0 left-0 z-40 flex w-full items-center absolute bg-gray-900 bg-opacity-20 shadow-sticky backdrop-blur-sm !transition
+        //  
+        //   ${
+          // sticky
+          //     ? "!fixed !z-[9999] "
+          //     : "absolute"
+          //
+          " "
+        }
+        `}
       >
         <div className="w-full py-6 sm:py-1">
           <div className="relative flex items-center justify-between text-center">
@@ -74,7 +79,7 @@ const Header = () => {
               </Link>
             </div> */}
             <div className="flex w-full items-center justify-between px-4">
-              <div className="mx-auto max-w-[800px] text-center">
+              <div className="mx-auto max-w-[900px] text-center">
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"

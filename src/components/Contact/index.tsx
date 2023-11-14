@@ -20,10 +20,11 @@ const Contact = () => {
           <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-left text-white">
             Contactez-nous
           </h2>
-          <p className="mb-8 lg:mb-16 font-light text-left text-gray-200 sm:text-xl">
-            Vous avez un problème technique ? Vous souhaitez envoyer des
-            commentaires sur une fonctionnalité bêta ? Besoin de détails sur
-            notre plan Business ? Faites le nous savoir.
+          <p className="mb-8 font-light text-left text-gray-200 sm:text-md">
+            Merci de manifester votre intérêt pour nous rejoindre ! Que vous
+            ayez une question, une suggestion ou simplement l'envie de dire
+            bonjour, nous serions ravis d'avoir de vos nouvelles. N'hésitez pas
+            à nous contacter via les canaux suivants:
           </p>
           <form action="#" className="space-y-8">
             <div>

@@ -3,8 +3,14 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Qui Somme nous".toUpperCase(),
+    title: "Accueil".toUpperCase(),
     path: "/",
+    newTab: false,
+  },
+  {
+    id: 1,
+    title: "Qui Somme nous".toUpperCase(),
+    path: "#about",
     newTab: false,
   },
   {

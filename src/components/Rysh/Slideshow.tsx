@@ -1,7 +1,7 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import AboutSectionOne from "../About/AboutSectionOne";
+import AboutSectionOne from "./AboutSectionOne";
 import Image from "next/image";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
@@ -24,7 +24,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ slides, trustBadge }) => {
   const indicators = (index?: number) => (
     index !== undefined && (
       <div className="indicator">
-          <div className="flex justify-center p-8 rounded-lg text-sm cursor-pointer ">
+        <div className="flex justify-center p-6 text-sm cursor-pointer bg-white m-4">
             <Image alt="" width={240} src={slides[index].imageSrc} />
           </div>
       </div>
@@ -33,6 +33,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ slides, trustBadge }) => {
 
   return (
     <Slide
+    autoplay={false}
       nextArrow={
         <button
           style={{

@@ -1,71 +1,101 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-import AboutSectionOne from "@/components/Awp/AboutSectionOne";
-import { AwpTabs, Tab } from "@/components/Awp/AwpTabs";
-
 import Logo from "../images/page 4/Logo.png";
-import Prod1 from "../images/page 4/Papier HYGIENIQUE .jpg";
 import Prod2 from "../images/page 4/Papier HYGIENIQUE X3 .jpg";
 import Prod3 from "../images/page 4/Papier HYGIENIQUE X6 .jpg";
 import Prod4 from "../images/page 4/Papier HYGIENIQUE X12 .jpg";
+import Prod1 from "../images/page 4/Papier HYGIENIQUE .jpg";
+
 import Prod5 from "../images/page 4/Essuit-tout.jpg";
+import Prod6 from "../images/page 4/ZIGZAG.png";
 
 import Tableimg from "../images/page 4/Table.png";
 
 import Contact from "@/components/Contact";
+import Slideshow from "@/components/Awp/Slideshow";
 
 export default function page() {
-  const CompProd1 = (
-    <div className="">
-      <AboutSectionOne
-        title="Papier"
-        subTitle="Hygiénique"
-        paragraph="AWP PRO, gamme de papier à usage professionnel, conçue pour répondre aux besoins spécifiques des entreprises, des institutions et des professionnels exigeants. Notre papier à usage professionnel est le choix idéal pour maintenir l'efficacité et la productivité dans votre environnement de travail Leur composition 100% pure ouate de cellulose et leur double épaisseur assurent absorption et résistance pour un confort d’utilisation et une efficacité optimales."
-        imageSrc={Prod1}
-      />
-    </div>
-  );
-  const CompProd2 = (
-    <div className="">
-      <AboutSectionOne
-        title="Papier"
-        subTitle="Hygiénique"
-        paragraph="AWP PRO, gamme de papier à usage professionnel, conçue pour répondre aux besoins spécifiques des entreprises, des institutions et des professionnels exigeants. Notre papier à usage professionnel est le choix idéal pour maintenir l'efficacité et la productivité dans votre environnement de travail Leur composition 100% pure ouate de cellulose et leur double épaisseur assurent absorption et résistance pour un confort d’utilisation et une efficacité optimales."
-        imageSrc={Prod2}
-      />
-    </div>
-  );
-  const CompProd3 = (
-    <div className="">
-      <AboutSectionOne
-        title="Papier"
-        subTitle="Hygiénique"
-        paragraph="AWP PRO, gamme de papier à usage professionnel, conçue pour répondre aux besoins spécifiques des entreprises, des institutions et des professionnels exigeants. Notre papier à usage professionnel est le choix idéal pour maintenir l'efficacité et la productivité dans votre environnement de travail Leur composition 100% pure ouate de cellulose et leur double épaisseur assurent absorption et résistance pour un confort d’utilisation et une efficacité optimales."
-        imageSrc={Prod3}
-      />
-    </div>
-  );
-  const CompProd4 = (
-    <div className="">
-      <AboutSectionOne
-        title="Papier"
-        subTitle="Hygiénique"
-        paragraph="AWP PRO, gamme de papier à usage professionnel, conçue pour répondre aux besoins spécifiques des entreprises, des institutions et des professionnels exigeants. Notre papier à usage professionnel est le choix idéal pour maintenir l'efficacité et la productivité dans votre environnement de travail Leur composition 100% pure ouate de cellulose et leur double épaisseur assurent absorption et résistance pour un confort d’utilisation et une efficacité optimales."
-        imageSrc={Prod4}
-      />
-    </div>
-  );
-  const CompProd5 = (
-    <div className="">
-      <AboutSectionOne
-        title="Papier"
-        subTitle="ESSUIE-TOUT"
-        paragraph="Explorez notre ligne d'essuie-tout professionnels AWP PRO, spécialement développés pour répondre aux normes rigoureuses des environnements commerciaux et industriels les plus exigeants. Nos essuie-tout sont l'élément essentiel pour garantir la propreté, l'efficacité et la productivité au sein de votre entreprise, de votre atelier ou de votre espace de travail. Chaque feuille est soigneusement conçue pour assurer une absorption rapide et efficace des liquides, une résistance exceptionnelle pour affronter les tâches les plus ardues, ainsi qu'une polyvalence qui satisfait une multitude de besoins professionnels. Nos essuie-tout professionnels sont le gage de performances constantes."
-        imageSrc={Prod5}
-      />
-    </div>
+  const Hygienique = [
+    {
+      title: "Papier",
+      subTitle: "USAGE PRO",
+      tagline: "3R",
+      paragraph1:
+        "AWP PRO est une collection de papiers professionnels soigneusement élaborée pour satisfaire les exigences particulières des entreprises, des institutions et des professionnels les plus exigeants. Notre gamme de papiers professionnels est le choix parfait pour maintenir la productivité et l'efficacité dans votre environnement de travail.",
+      paragraph2:
+        "Grâce à leur composition en pure ouate de cellulose à 100% et à leur double épaisseur, ces papiers garantissent une absorption exceptionnelle et une résistance qui vous procureront un confort d'utilisation et une efficacité optimaux.",
+      imageSrc: Prod2,
+    },
+    {
+      title: "Papier",
+      subTitle: "USAGE PRO",
+      tagline: "6R",
+      paragraph1:
+        "AWP PRO est une collection de papiers professionnels soigneusement élaborée pour satisfaire les exigences particulières des entreprises, des institutions et des professionnels les plus exigeants. Notre gamme de papiers professionnels est le choix parfait pour maintenir la productivité et l'efficacité dans votre environnement de travail.",
+      paragraph2:
+        "Grâce à leur composition en pure ouate de cellulose à 100% et à leur double épaisseur, ces papiers garantissent une absorption exceptionnelle et une résistance qui vous procureront un confort d'utilisation et une efficacité optimaux.",
+      imageSrc: Prod3,
+    },
+    {
+      title: "Papier",
+      subTitle: "USAGE PRO",
+      tagline: "12R",
+      paragraph1:
+        "AWP PRO est une collection de papiers professionnels soigneusement élaborée pour satisfaire les exigences particulières des entreprises, des institutions et des professionnels les plus exigeants. Notre gamme de papiers professionnels est le choix parfait pour maintenir la productivité et l'efficacité dans votre environnement de travail.",
+      paragraph2:
+        "Grâce à leur composition en pure ouate de cellulose à 100% et à leur double épaisseur, ces papiers garantissent une absorption exceptionnelle et une résistance qui vous procureront un confort d'utilisation et une efficacité optimaux.",
+      imageSrc: Prod4,
+    },
+    {
+      title: "Papier",
+      subTitle: "USAGE PRO",
+      tagline: "18R",
+      paragraph1:
+        "AWP PRO est une collection de papiers professionnels soigneusement élaborée pour satisfaire les exigences particulières des entreprises, des institutions et des professionnels les plus exigeants. Notre gamme de papiers professionnels est le choix parfait pour maintenir la productivité et l'efficacité dans votre environnement de travail.",
+      paragraph2:
+        "Grâce à leur composition en pure ouate de cellulose à 100% et à leur double épaisseur, ces papiers garantissent une absorption exceptionnelle et une résistance qui vous procureront un confort d'utilisation et une efficacité optimaux.",
+      imageSrc: Prod1,
+    },
+  ];
+  const EssuiteTout = [
+    {
+      title: "Papier",
+      subTitle: "ESSUIE-TOUT",
+      tagline: "",
+      paragraph1:
+        "Explorez notre collection d'essuie-tout professionnels AWP PRO, spécialement Bienvenue dans notre sélection de produits AWP PRO d'essuie-tout professionnels. Cette gamme a été spécialement développée pour répondre aux normes strictes des environnements commerciaux et industriels les plus exigeants. Nos essuie-tout sont plus qu'un simple produit, ils sont essentiels pour maintenir la propreté, améliorer l'efficacité et stimuler la productivité au sein de votre entreprise, de votre atelier ou de votre espace de travail.",
+      paragraph2:
+        "Chaque feuille a été soigneusement conçue pour garantir une absorption rapide et efficace des liquides, une résistance exceptionnelle face aux tâches les plus ardues, et une polyvalence qui répond à une variété de besoins professionnels. Avec nos essuie-tout professionnels, vous pouvez compter sur des performances constantes et une solution fiable pour vos besoins en matière de nettoyage et d'hygiène.",
+      imageSrc: Prod5,
+    },
+  ];
+  const ZigZag = [
+    {
+      title: "Papier",
+      subTitle: "ZigZag",
+      tagline: "150 serviettes",
+      paragraph1:
+        "Découvrez notre gamme d'essuie-mains zigzag AWP PRO, la solution idéale pour une absorption maximale tout en préservant les ressources. Nos essuie-mains zigzag combinent parfaitement praticité et efficacité.",
+      paragraph2:
+        `Grâce aux plis en zigzag, nos essuie-mains facilitent la prise en main et l'essuyage, minimisant ainsi considérablement le gaspillage de papier. Que ce soit dans des restaurants, des cuisines, des bureaux, ou à la maison, nos essuie-mains zigzag sont adaptés à une variété de situations.
+
+        Ils sont disponibles en lot de 150 serviettes pour répondre à vos besoins en matière de propreté et de praticité. Faites le choix de l'efficacité et de la durabilité avec nos essuie-mains zigzag AWP PRO.`,
+      imageSrc: Prod6,
+    },
+  ];
+
+  const NavigationItem = ({ href, label }) => (
+    <li className="mr-2">
+      <Link
+        href={href}
+        className="inline-flex items-center justify-center p-4 hover:text-[#1f9257] hover:bg-white rounded-full px-5 py-2 group active"
+      >
+        {label}
+      </Link>
+    </li>
   );
 
   return (
@@ -103,59 +133,24 @@ export default function page() {
           </div>
         </div>
       </section>
-      <div>
-        <div className="justify-between items-center">
-          <AwpTabs>
-            <Tab component={CompProd1} className="flex flex-row" active>
-              <div className="flex items-center space-x-2">
-                <Image
-                  src={Prod1}
-                  alt=""
-                  className="w-full h-60 object-cover object-center"
-                />
-              </div>
-            </Tab>
-            <Tab component={CompProd2}>
-              <div className="flex items-center space-x-2">
-                <Image
-                  src={Prod2}
-                  alt=""
-                  className="w-full h-60 object-cover object-center"
-                />
-              </div>
-            </Tab>
-            <Tab component={CompProd3}>
-              <div className="flex items-center space-x-2">
-                <Image
-                  src={Prod3}
-                  alt=""
-                  className="w-full h-60 object-cover object-center"
-                />
-              </div>
-            </Tab>
-            <Tab component={CompProd4}>
-              <div className="flex items-center space-x-2">
-                <Image
-                  src={Prod4}
-                  alt=""
-                  className="w-full h-60 object-cover object-center"
-                />
-              </div>
-            </Tab>
-            <Tab component={CompProd5}>
-              <div className="flex items-center space-x-2">
-                <Image
-                  src={Prod4}
-                  alt=""
-                  className="w-full h-60 object-cover object-center"
-                />
-              </div>
-            </Tab>
-          </AwpTabs>
-        </div>
+      <div className="w-full bg-[#1f9257] py-4">
+        <ul className="flex max-w-min flex-row -mb-px  text-lg font-medium text-center text-white container mx-auto">
+          <NavigationItem href="#Hygienique" label="Hygienique" />
+          <NavigationItem href="#EssuiteTout" label="EssuitTout" />
+          <NavigationItem href="#ZigZag" label="ZigZag" />
+        </ul>
       </div>
-      <div className="px-40 py-4">
-        <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#1f9356]">
+      <div id="Hygienique">
+        <Slideshow trustBadge={false} slides={Hygienique} />
+      </div>
+      <div id="EssuiteTout">
+        <Slideshow trustBadge={false} slides={EssuiteTout} />
+      </div>
+      <div id="ZigZag">
+        <Slideshow trustBadge={false} slides={ZigZag} />
+      </div>
+      <div className="px-40 py-12">
+        <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#1f9257]">
           Gamme <span className="font-light">Celline</span>
         </h1>
       </div>

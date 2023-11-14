@@ -49,15 +49,15 @@ export default function Home() {
               width={180}
               height={1000}
             />
-            <h1 className=" py-4 uppercase mb-5 text-xl sm:text-7xl font-light leading-tight text-white  sm:leading-tight md:text-7xl md:leading-tight">
-              Powerful <div className="font-extrabold"> Cleaning</div>
+            <h1 className="pt-8  mb-5 text-5xl font-light leading-tight text-white  sm:leading-tight md:leading-tight">
+               Powerful <div className="font-normal capilazed text-6xl "> Cleaning</div>
             </h1>
           </div>
         </div>
       </section>
       {/* Centered and Overlapping Section */}
       <section className="flex justify-center items-center text-center text-green-500 z-20 mx-6 sm:mx-0">
-        <div
+        <div  id="about" 
           className="relative flex flex-col bg-clip-border bg-white p-20 text-gray-700 rounded-2xl shadow-lg shadow-gray-500/10"
           style={{ marginTop: "-100px" }}
         >
@@ -65,7 +65,7 @@ export default function Home() {
             Africa West Paper.
           </h2>
           <p className="mt-6 text-lg leading-8 text-green-600">
-            est un groupe spécialisé dans la fabrication et la commercialisation
+          AFRICA WEST PAPER est une société spécialisée dans la fabrication et la commercialisation
             <br /> de produits d’hygiène et d’essuyage en papier.
           </p>
           <p className="mt-6 text-center max-w-[770px] text-sm sm:text-md leading-8 text-gray-500">

@@ -5,34 +5,33 @@ import AboutSectionOne from "../About/AboutSectionOne";
 import Image, { StaticImageData } from "next/image";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
-import './slider.css'
+import "./slider.css";
 
 interface Slide {
   title: string;
   subTitle: string;
   paragraph: string;
-  imageSrc: string | StaticImageData; 
+  imageSrc: string | StaticImageData;
 }
 
 interface SlideshowProps {
   slides: Slide[];
-  trustBadge: boolean; 
+  trustBadge: boolean;
 }
 
 const Slideshow: React.FC<SlideshowProps> = ({ slides, trustBadge }) => {
-  
-  const indicators = (index?: number) => (
+  const indicators = (index?: number) =>
     index !== undefined && (
       <div className="indicator">
-          <div className="flex justify-center p-8 rounded-lg text-sm cursor-pointer ">
-            <Image alt="" width={240} src={slides[index].imageSrc} />
-          </div>
+        <div className="flex justify-center p-6 text-sm cursor-pointer bg-white m-4">
+          <Image alt="" width={240} src={slides[index].imageSrc} />
+        </div>
       </div>
-    )
-  );
+    );
 
   return (
     <Slide
+      autoplay={false}
       nextArrow={
         <button
           style={{
@@ -59,13 +58,15 @@ const Slideshow: React.FC<SlideshowProps> = ({ slides, trustBadge }) => {
     >
       {slides.map((slide, index) => (
         <div className="each-slide-effect" key={index}>
-          {<AboutSectionOne
-            title={slide.title}
-            subTitle={slide.subTitle}
-            paragraph={slide.paragraph}
-            imageSrc={slide.imageSrc}
-            trustBadge={trustBadge}
-          />}
+          {
+            <AboutSectionOne
+              title={slide.title}
+              subTitle={slide.subTitle}
+              paragraph={slide.paragraph}
+              imageSrc={slide.imageSrc}
+              trustBadge={trustBadge}
+            />
+          }
         </div>
       ))}
     </Slide>
