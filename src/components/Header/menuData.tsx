@@ -41,13 +41,13 @@ const menuData: Menu[] = [
   {
     id: 3,
     title: "NOS VALEURS".toUpperCase(),
-    path: "#valeurs",
+    path: "/",
     newTab: false,
   },
   {
     id: 4,
     title: "CONTACT".toUpperCase(),
-    path: "#contact",
+    path: "/",
     newTab: false,
   },
 ];
