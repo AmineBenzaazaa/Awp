@@ -42,33 +42,61 @@ export default function page() {
   const Hygienique = [
     {
       title: "Papier",
-      subTitle: "Hygiénique 4 R",
-      paragraph: `Papier hygiénique 4 Rouleaux Celline : Découvrez le luxe de notre papier Celline, doté de triple épaisseur et d'une texture hyper absorbante en pure ouate de cellulose. Cette option pratique et haut de gamme est disponible en format 4 rouleaux.`,
+      subTitle: "Hygiénique",
+      tagline: "4R",
+      paragraph1:
+        "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
+      paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
+        Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
+        Chaque rouleau est méticuleusement élaboré 
+        `,
       imageSrc: Prod2,
     },
     {
       title: "Papier",
-      subTitle: "Hygiénique 7+2 R",
-      paragraph: `Papier hygiénique 7+2 Rouleaux Celline : Profitez d'une sensation de douceur et de résistance grâce à notre papier triple épaisseur en pure ouate de cellulose. Idéal pour une hygiène quotidienne, il est disponible en format 7+2 rouleaux. `,
-
+      subTitle: "Hygiénique",
+      tagline: "7+2 R",
+      paragraph1:
+        "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
+      paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
+        Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
+        Chaque rouleau est méticuleusement élaboré 
+        `,
       imageSrc: Prod1,
     },
     {
       title: "Papier 3",
-      subTitle: "Hygiénique 12 R",
-      paragraph: `Papier hygiénique 12 Rouleaux Celline : Optez pour notre format généreux de 12 rouleaux, offrant une douceur inégalée et une résistance fiable grâce à sa triple épaisseur et à sa texture absorbante en pure ouate de cellulose.      `,
+      subTitle: "Hygiénique",
+      tagline: "12 R",
+      paragraph1:
+        "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
+      paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
+        Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
+        Chaque rouleau est méticuleusement élaboré 
+        `,
       imageSrc: Prod3,
     },
     {
       title: "Papier 3",
-      subTitle: "Hygiénique 24 R",
-      paragraph: `Papier hygiénique 24 Rouleaux Celline : Pour un approvisionnement à long terme, choisissez notre format économique de 24 rouleaux. Vous bénéficierez toujours de la triple épaisseur et de la délicate texture en pure ouate de cellulose.      `,
+      subTitle: "Hygiénique",
+      tagline: "24 R",
+      paragraph1:
+        "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
+      paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
+        Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
+        Chaque rouleau est méticuleusement élaboré 
+        `,
       imageSrc: Prod4,
     },
     {
       title: "Papier 3",
       subTitle: "Hygiénique 32 R",
-      paragraph: `Papier hygiénique 32 Rouleaux Celline : Pour allier praticité et qualité, notre format généreux de 32 rouleaux offre un confort optimal au quotidien, grâce à sa triple épaisseur et à sa texture en pure ouate de cellulose de première qualité.`,
+      paragraph1:
+        "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
+      paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
+        Décliné sous différentes formes pour répondre à tous les besoins et usages, Celline offre un large choix aux ménages et aux professionnelles pour une propreté optimale.
+        Chaque rouleau est méticuleusement élaboré 
+        `,
       imageSrc: Prod5,
     },
   ];
@@ -77,38 +105,52 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "ESSUIE-TOUT 1R",
-      paragraph: `Découvrez l'essuie-tout Celline, fabriqué à partir de 100% de pure ouate de cellulose et doté d'une double épaisseur. Il combine une absorption exceptionnelle et une résistance pour une polyvalence optimale, que ce soit en cuisine ou pour le nettoyage. Explorez notre gamme d'essuie-tout de qualité supérieure, conçus pour répondre à tous vos besoins de nettoyage. Nos essuie-tout sont la solution idéale pour maintenir une propreté impeccable dans votre maison, au bureau, ou partout où vous en avez besoin`,
+      tagline: "1 R",
+      paragraph1:
+        "Grâce à sa composition 100% pure ouate de cellulose et à sa double épaisseur, l’essuie-tout Celline est à la fois absorbant et résistant pour de multiples usages et un confort d’utilisation optimal soit en cuisines ou en espaces de nettoyage,        ",
+      paragraph2: `Découvrez notre gamme d'essuie-tout de qualité supérieure, conçus pour répondre à tous vos besoins de nettoyage. 
+
+      Nos essuie-tout sont la solution idéale pour une propreté impeccable dans votre maison, votre bureau ou n'importe où vous en avez besoin.      
+      `,
       imageSrc: Prod6,
     },
     {
       title: "Papier",
-      subTitle: "ESSUIE-TOUT - MULTIUSAGE",
-      paragraph:
-        "Découvrez l'essuie-tout Celline, fabriqué à partir de 100% de pure ouate de cellulose et doté d'une double épaisseur. Il combine une absorption exceptionnelle et une résistance pour une polyvalence optimale, que ce soit en cuisine ou pour le nettoyage. Explorez notre gamme d'essuie-tout de qualité supérieure, conçus pour répondre à tous vos besoins de nettoyage. Nos essuie-tout sont la solution idéale pour maintenir une propreté impeccable dans votre maison, au bureau, ou partout où vous en avez besoin.",
+      subTitle: "ESSUIE-TOUT",
+      tagline: "MULTIUSAGE",
+      paragraph1:
+        "Sa composition 100% pure ouate de cellulose et à sa double épaisseur, l’essuie-tout Celline Maxi Rooll XXL est à la fois absorbant et résistant pour de multiples usages et un confort d’utilisation optimal et prolongée,        ",
+      paragraph2: `Chaque feuille est soigneusement élaborée pour offrir une absorption rapide et efficace des liquides, que ce soit des déversements accidentels, de la cuisine désordonnée ou des tâches ménagères exigeantes. La résistance exceptionnelle de nos essuie-tout garantit qu'ils ne se déchireront pas, même lors de tâches plus exigeantes.      `,
       imageSrc: Prod7,
     },
   ];
-  
+
   const Mouchoirs = [
     {
       title: "Papier",
-      subTitle: "Mouchoirs 200 Feuilles",
-      paragraph:
-        "CELLINE propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort d’utilisation polyvalentes Le papier mouchoirs CELLINE sont fabriqués avec une attention minutieuse pour garantir une douceur exceptionnelle contre votre peau tout en étant suffisamment résistants pour une utilisation sans souci. Laissez nos mouchoirs vous offrir une sensation de réconfort à chaque utilisation.",
+      subTitle: "Mouchoirs ",
+      tagline: "200 Feuilles",
+      paragraph1:
+        "CELLINE propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort d’utilisation polyvalentes         ",
+      paragraph2: `Le papier mouchoirs CELLINE sont fabriqués avec une attention minutieuse pour garantir une douceur exceptionnelle contre votre peau tout en étant suffisamment résistants pour une utilisation sans souci. Laissez nos mouchoirs vous offrir une sensation de réconfort à chaque utilisation.      `,
       imageSrc: Prod8,
     },
     {
       title: "Papier",
-      subTitle: "Mouchoirs 300 Feuilles",
-      paragraph:
-        "CELLINE propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort d’utilisation polyvalentes Le papier mouchoirs CELLINE sont fabriqués avec une attention minutieuse pour garantir une douceur exceptionnelle contre votre peau tout en étant suffisamment résistants pour une utilisation sans souci. Laissez nos mouchoirs vous offrir une sensation de réconfort à chaque utilisation.",
+      subTitle: "Mouchoirs",
+      tagline: "300 Feuilles",
+      paragraph1:
+        "CELLINE propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort d’utilisation polyvalentes         ",
+      paragraph2: `Le papier mouchoirs CELLINE sont fabriqués avec une attention minutieuse pour garantir une douceur exceptionnelle contre votre peau tout en étant suffisamment résistants pour une utilisation sans souci. Laissez nos mouchoirs vous offrir une sensation de réconfort à chaque utilisation.      `,
       imageSrc: Prod8,
     },
     {
       title: "Papier",
-      subTitle: "Mouchoirs 550 Feuilles",
-      paragraph:
-        "CELLINE propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort d’utilisation polyvalentes Le papier mouchoirs CELLINE sont fabriqués avec une attention minutieuse pour garantir une douceur exceptionnelle contre votre peau tout en étant suffisamment résistants pour une utilisation sans souci. Laissez nos mouchoirs vous offrir une sensation de réconfort à chaque utilisation.",
+      subTitle: "Mouchoirs",
+      tagline: "550 Feuilles",
+      paragraph1:
+        "CELLINE propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort d’utilisation polyvalentes         ",
+      paragraph2: `Le papier mouchoirs CELLINE sont fabriqués avec une attention minutieuse pour garantir une douceur exceptionnelle contre votre peau tout en étant suffisamment résistants pour une utilisation sans souci. Laissez nos mouchoirs vous offrir une sensation de réconfort à chaque utilisation.      `,
       imageSrc: Prod10,
     },
   ];
@@ -116,18 +158,22 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "Poket",
-      paragraph: `Nos papiers pocket CELLINE 3 plis, pour essuyer le nez sont le choix idéal pour tous ceux qui recherchent une solution pratique et douce pour affronter le quotidien, qu'il s'agisse de saison du rhume, de fortes allergies ou tout simplement d'un besoin de fraîcheur.
-      Nos papiers pocket sont conçus avec votre confort à l'esprit. Ils sont doux, résistants et faciles à emporter partout où vous allez. Grâce à leur format pratique, glissez-les dans votre sac, votre poche ou gardez-les à portée de main à la maison ou au bureau ou à chaque éternuement.`,
-      imageSrc: Prod11,
+      tagline: "10 Mouchoirs",
+      paragraph1:
+        "Découvrez les papiers pocket CELLINE, spécialement conçus pour essuyer le nez, offrant une solution pratique et douce pour faire face au quotidien, que ce soit pendant la saison du rhume, en cas d'allergies prononcées ou simplement pour rafraîchir.  ",
+      paragraph2: `Nos papiers pocket sont élaborés en pensant à votre confort. Ils sont doux, résistants et faciles à emporter partout où vous allez. Grâce à leur format compact, glissez-les dans votre sac, votre poche, ou gardez-les à portée de main à la maison ou au bureau, prêts à être utilisés à chaque éternuement.      `,
+     imageSrc: Prod11,
     },
   ];
   const Napking = [
     {
       title: "Papier",
       subTitle: "Napking",
-      paragraph:
-        "CELLINE propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort d’utilisation polyvalentes Le papier mouchoirs CELLINE sont fabriqués avec une attention minutieuse pour garantir une douceur exceptionnelle contre votre peau tout en étant suffisamment résistants pour une utilisation sans souci. Laissez nos mouchoirs vous offrir une sensation de réconfort à chaque utilisation.",
-      imageSrc: Prod12,
+      tagline: "75 Serviette",
+      paragraph1:
+        "Explorez la variété de serviettes en papier CELLINE, soigneusement conçues pour marier délicatesse et une remarquable capacité d'absorption. Ces serviettes sont le complément parfait pour n'importe quelle table, que ce soit pour un repas familial décontracté ou une occasion spéciale. De plus, elles constituent une solution discrète pour ranger vos couverts, serviettes et autres accessoires de table.        ",
+      paragraph2: `Plongez dans notre sélection de produits pour découvrir précisément ce qui convient à vos besoins. Chez CELLINE, la qualité est notre priorité absolue, et nous nous engageons à répondre à vos besoins en matière de papier de table. Nos serviettes, disponibles en lot de 75, ajoutent une touche de confort et d'élégance à chaque événement, qu'il s'agisse d'une réception ou d'un repas en famille.      `,
+     imageSrc: Prod12,
     },
   ];
 
