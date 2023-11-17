@@ -90,7 +90,8 @@ export default function page() {
     },
     {
       title: "Papier 3",
-      subTitle: "Hygiénique 32 R",
+      subTitle: "Hygiénique ",
+      tagline: "32 R",
       paragraph1:
         "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
       paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
@@ -154,6 +155,7 @@ export default function page() {
       imageSrc: Prod10,
     },
   ];
+
   const Poket = [
     {
       title: "Papier",
@@ -165,6 +167,7 @@ export default function page() {
      imageSrc: Prod11,
     },
   ];
+
   const Napking = [
     {
       title: "Papier",

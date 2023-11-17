@@ -2,71 +2,64 @@ import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import AboutSectionOne from "./AboutSectionOne";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
-import './slider.css'
+import "./slider.css";
 
 interface Slide {
   title: string;
   subTitle: string;
-  paragraph: string;
-  imageSrc: string;
+  tagline: string;
+  paragraph1: string;
+  paragraph2: string;
+  imageSrc: string | StaticImageData;
+  trustBadge: boolean;
 }
 
 interface SlideshowProps {
   slides: Slide[];
-  trustBadge: boolean; 
+  trustBadge: boolean;
 }
 
 const Slideshow: React.FC<SlideshowProps> = ({ slides, trustBadge }) => {
- 
-  const indicators = (index?: number) => (
+  const indicators = (index?: number) =>
     index !== undefined && (
       <div className="indicator">
-        <div className="flex justify-center p-6 text-sm cursor-pointer bg-white m-4">
-            <Image alt="" width={240} src={slides[index].imageSrc} />
-          </div>
+        <div className="flex justify-center p-2 text-sm cursor-pointer bg-white m-4">
+          <Image alt="" width={200} src={slides[index].imageSrc} />
+        </div>
       </div>
-    )
-  );
+    );
 
   return (
     <Slide
-    autoplay={false}
+      autoplay={false}
       nextArrow={
-        <button
-          style={{
-            background: "none",
-            border: "0px",
-            width: "30px",
-          }}
-        >
-          <BsArrowRight size={28} color="white" />
-        </button>
+        <div className="px-8">
+          <BsArrowRight size={38} color="#0f4690" />
+        </div>
       }
       prevArrow={
-        <button
-          style={{
-            background: "none",
-            border: "0px",
-            width: "30px",
-          }}
-        >
-          <BsArrowLeft size={28} color="white" />
-        </button>
+        <div className="px-8">
+          <BsArrowLeft size={38} color="#0f4690" />
+        </div>
       }
       indicators={(index) => indicators(index)}
     >
       {slides.map((slide, index) => (
         <div className="each-slide-effect" key={index}>
-          {<AboutSectionOne
-            title={slide.title}
-            subTitle={slide.subTitle}
-            paragraph={slide.paragraph}
-            imageSrc={slide.imageSrc}
-            trustBadge={trustBadge}
-          />}
+          {
+            <AboutSectionOne
+              title={slide.title}
+              subTitle={slide.subTitle}
+              tagline={slide.tagline}
+              paragraph1={slide.paragraph1}
+              paragraph2={slide.paragraph2}
+              imageSrc={slide.imageSrc}
+              trustBadge={trustBadge}
+            />
+          }
         </div>
       ))}
     </Slide>

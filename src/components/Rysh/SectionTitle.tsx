@@ -1,16 +1,21 @@
+
+
+
 const SectionTitle = ({
   title,
   subTitle,
-  subTitle2,
-  paragraph,
-  width = "570px",
+  tagline,
+  paragraph1,
+  paragraph2,
+  width = "620px",
   center,
   mb = "100px",
 }: {
   title: string;
   subTitle?: string;
-  subTitle2?: string;
-  paragraph: string;
+  tagline?: string;
+  paragraph1: string;
+  paragraph2: string;
   width?: string;
   center?: boolean;
   mb?: string;
@@ -28,11 +33,14 @@ const SectionTitle = ({
         <h2 className="text-5xl sm:text-7xl font-extrabold text-[#672a81] !leading-tight uppercase">
           {subTitle}
         </h2>
-        <h2 className="text-5xl sm:text-7xl font-light text-[#ca962b] !leading-tight uppercase">
-          {subTitle2}
+        <h2 className="text-5xl sm:text-5xl font-meduim text-[#ca962b] !leading-tight uppercase">
+          {tagline}
         </h2>
-        <p className="text-sm sm:text-md py-6 text-gray-500 !leading-relaxed text-body-color md:text-lg">
-          {paragraph}
+        <p className="text-sm sm:text-sm md:text-md py-6 text-gray-500 !leading-relaxed text-body-color ">
+          {paragraph1}
+        </p>
+        <p className="text-sm sm:text-sm md:text-md text-gray-500 !leading-relaxed text-body-color">
+          {paragraph2}
         </p>
       </div>
     </>

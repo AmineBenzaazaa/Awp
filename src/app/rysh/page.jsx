@@ -32,98 +32,119 @@ export default function page() {
   const Hygienique = [
     {
       title: "Papier",
-      subTitle: "Hygiénique  4R",
-      paragraph:
+      subTitle: "Hygiénique",
+      tagline: "4R",
+      paragraph1:
         "Rysh offre un papier hygiénique 2 plis de qualité, comme il est conçu pour répondre à vos besoins en matière de confort, de propreté et de durabilité. Fabriqué à partir de matières premières de première qualité, il est doux au toucher, résistant et incroyablement absorbant        ",
+      paragraph2: ` 
+        `,
       imageSrc: Prod1,
     },
     {
       title: "Papier",
-      subTitle: "Hygiénique 6R",
-      paragraph:
+      subTitle: "Hygiénique",
+      tagline: "6 R",
+      paragraph1:
         "Rysh offre un papier hygiénique 2 plis de qualité, comme il est conçu pour répondre à vos besoins en matière de confort, de propreté et de durabilité. Fabriqué à partir de matières premières de première qualité, il est doux au toucher, résistant et incroyablement absorbant        ",
+      paragraph2: ` 
+        `,
       imageSrc: Prod2,
     },
     {
-      title: "Papier",
-      subTitle: "Hygiénique 12R",
-      paragraph:
+      title: "Papier 3",
+      subTitle: "Hygiénique",
+      tagline: "12 R",
+      paragraph1:
         "Rysh offre un papier hygiénique 2 plis de qualité, comme il est conçu pour répondre à vos besoins en matière de confort, de propreté et de durabilité. Fabriqué à partir de matières premières de première qualité, il est doux au toucher, résistant et incroyablement absorbant        ",
+      paragraph2: ` 
+        `,
       imageSrc: Prod3,
     },
     {
-      title: "Papier",
-      subTitle: "Hygiénique 24R",
-      paragraph:
+      title: "Papier 3",
+      subTitle: "Hygiénique",
+      tagline: "24 R",
+      paragraph1:
         "Rysh offre un papier hygiénique 2 plis de qualité, comme il est conçu pour répondre à vos besoins en matière de confort, de propreté et de durabilité. Fabriqué à partir de matières premières de première qualité, il est doux au toucher, résistant et incroyablement absorbant        ",
+      paragraph2: ` 
+        `,
       imageSrc: Prod4,
     },
-    
   ];
 
   const EssuiteTout = [
     {
       title: "Papier",
-      subTitle: "ESSUIE-TOUT - MULTIUSAGE",
-      paragraph: `Une polyvalence et une double épaisseur, l’essuie-tout Rysh Maxi Rooll XXL est à la fois absorbant et résistant pour de multiples usages et un confort d’utilisation optimal.
-
-      Conçus pour simplifier le quotidien en étant une solution pratique et hautement efficace,`, 
-      imageSrc: Prod7,
+      subTitle: "ESSUIE-TOUT 1R",
+      tagline: "1 R",
+      paragraph1:
+        "L’essuie-tout Rysh est composé d’un papier 2 plis  de qualité, 100% pure ouate de cellulose, absorbant et résistant, pour tous les usages du quotidien.        ",
+      paragraph2: ` 
+      Rysh Essuie-tout c’est l'outil parfait pour maintenir la propreté et l'efficacité dans votre maison, votre lieu de travail ou tout endroit où vous en avez besoin.`,
+      imageSrc: Prod6,
     },
     {
       title: "Papier",
-      subTitle: "ESSUIE-TOUT 2R",
-      paragraph: `L’essuie-tout Rysh est composé d’un papier 2 plis  de qualité, 100% pure ouate de cellulose, absorbant et résistant, pour tous les usages du quotidien.`,
-      imageSrc: Prod5,
+      subTitle: "ESSUIE-TOUT",
+      tagline: "MULTIUSAGE",
+      paragraph1:
+        "Une polyvalence et une double épaisseur, l’essuie-tout Rysh Maxi Rooll XXL est à la fois absorbant et résistant pour de multiples usages et un confort d’utilisation optimal.        ",
+      paragraph2: `Conçus pour simplifier le quotidien en étant une solution pratique et hautement efficace,       `,
+      imageSrc: Prod7,
     },
   ];
 
   const Mouchoirs = [
     {
       title: "Papier",
-      subTitle: "Mouchoirs 200 Feuilles",
-      paragraph: `Rysh propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort.
-
-        Conçus pour apporter un soulagement instantané, Rysh propose des  mouchoirs parfaits pour faire face aux éternuements, aux larmes, ou simplement pour se rafraîchir
-        `,
-      imageSrc: Prod9,
+      subTitle: "Mouchoirs ",
+      tagline: "200 Feuilles",
+      paragraph1:
+        "Rysh propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort.        ",
+      paragraph2: `Conçus pour apporter un soulagement instantané, Rysh propose des  mouchoirs parfaits pour faire face aux éternuements, aux larmes, ou simplement pour se rafraîchir      `,
+      imageSrc: Prod2,
     },
     {
       title: "Papier",
-      subTitle: "Mouchoirs 300 Feuilles",
-      paragraph: `Rysh propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort.
-
-        Conçus pour apporter un soulagement instantané, Rysh propose des  mouchoirs parfaits pour faire face aux éternuements, aux larmes, ou simplement pour se rafraîchir
-        `,
-      imageSrc: Prod9,
+      subTitle: "Mouchoirs",
+      tagline: "300 Feuilles",
+      paragraph1:
+      "Rysh propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort.        ",
+    paragraph2: `Conçus pour apporter un soulagement instantané, Rysh propose des  mouchoirs parfaits pour faire face aux éternuements, aux larmes, ou simplement pour se rafraîchir      `,
+    imageSrc: Prod2,
     },
     {
       title: "Papier",
-      subTitle: "Mouchoirs 550 Feuilles",
-      paragraph: `Rysh propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort.
-
-        Conçus pour apporter un soulagement instantané, Rysh propose des  mouchoirs parfaits pour faire face aux éternuements, aux larmes, ou simplement pour se rafraîchir
-        `,
-      imageSrc: Prod10,
+      subTitle: "Mouchoirs",
+      tagline: "550 Feuilles",
+      paragraph1:
+      "Rysh propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort.        ",
+    paragraph2: `Conçus pour apporter un soulagement instantané, Rysh propose des  mouchoirs parfaits pour faire face aux éternuements, aux larmes, ou simplement pour se rafraîchir      `,
+    imageSrc: Prod10,
     },
   ];
 
   const Poket = [
     {
       title: "Papier",
-      subTitle: "Poket 10",
-      paragraph: `Nos papiers pocket Rysh 2 Plis, sont conçus avec votre confort à l'esprit. Ils sont doux, résistants et faciles à emporter partout où vous allez. Grâce à leur format pratique, glissez-les dans votre sac, votre poche ou gardez-les à portée de main à la maison ou au bureau ou à chaque éternuement.`,
-      imageSrc: Prod12,
+      subTitle: "Poket",
+      tagline: "10 Mouchoirs",
+      paragraph1:
+        "Explorez les papiers pocket de la marque Rysh, spécialement conçus pour offrir une solution pratique et douce pour vos besoins quotidiens. Que ce soit pendant la saison du rhume, en cas d'allergies prononcées ou simplement pour vous rafraîchir, les papiers pocket Rysh sont là pour vous. ",
+      paragraph2: `Leur conception est centrée sur votre confort, avec une douceur remarquable, une résistance fiable et une facilité d'emport partout où vous allez. Grâce à leur format compact, glissez-les dans votre sac, votre poche, ou gardez-les à portée de main à la maison ou au bureau, prêts à être utilisés à chaque besoin, que ce soit un éternuement ou simplement pour vous sentir bien.      `,
+     imageSrc: Prod11,
     },
   ];
-
+  
   const Napking = [
     {
       title: "Papier",
-      subTitle: "Napking 75 Serviettes",
-      paragraph: `Nos serviettes Rysh en papier douces et absorbantes sont le complément parfait pour toute table, qu'il s'agisse d'un repas décontracté en famille ou d'un événement spécial.
-      Elles offrent une solution de rangement discrète pour vos couverts, serviettes et autres accessoires.`,
-      imageSrc: Prod11,
+      subTitle: "Napking",
+      tagline: "75 Serviette",
+      paragraph1:
+        "Découvrez la variété de serviettes en papier RYSH, méticuleusement conçues pour allier délicatesse et une remarquable capacité d'absorption. Ces serviettes sont le complément parfait pour n'importe quelle table, que ce soit pour un repas familial décontracté ou une occasion spéciale. De plus, elles constituent une solution discrète pour ranger vos couverts, serviettes et autres accessoires de table.        ",
+      paragraph2: `Explorez notre sélection de produits pour découvrir précisément ce qui convient à vos besoins. Chez RYSH, la qualité est notre priorité absolue, et nous nous engageons à répondre à vos besoins en matière de papier de table. Nos serviettes, disponibles en lot de 75, ajoutent une touche de confort et d'élégance à chaque événement, qu'il s'agisse d'une réception ou d'un repas en famille      `,
+     imageSrc: Prod12,
     },
   ];
 
