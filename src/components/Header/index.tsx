@@ -49,7 +49,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 z-40 flex w-full items-center absolute bg-gray-900 bg-opacity-20 shadow-sticky backdrop-blur-sm !transition
+        className={`header top-0 left-0 z-40 flex w-full items-center absolute bg-gray-900 bg-opacity-20 shadow-sticky !transition
         //  
         //   ${
           // sticky
