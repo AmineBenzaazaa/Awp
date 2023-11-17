@@ -37,12 +37,12 @@ const Slideshow: React.FC<SlideshowProps> = ({ slides, trustBadge }) => {
       autoplay={false}
       nextArrow={
         <div className="px-8">
-          <BsArrowRight size={38} color="#0f4690" />
+          <BsArrowRight size={38} color="#712d84" />
         </div>
       }
       prevArrow={
         <div className="px-8">
-          <BsArrowLeft size={38} color="#0f4690" />
+          <BsArrowLeft size={38} color="#712d84" />
         </div>
       }
       indicators={(index) => indicators(index)}
