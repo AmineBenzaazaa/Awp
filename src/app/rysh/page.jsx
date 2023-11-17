@@ -75,7 +75,7 @@ export default function page() {
   const EssuiteTout = [
     {
       title: "Papier",
-      subTitle: "ESSUIE-TOUT 1R",
+      subTitle: "ESSUIE-TOUT",
       tagline: "1 R",
       paragraph1:
         "L’essuie-tout Rysh est composé d’un papier 2 plis  de qualité, 100% pure ouate de cellulose, absorbant et résistant, pour tous les usages du quotidien.        ",

@@ -143,13 +143,13 @@ const Header = () => {
                             >
                               {menuItem.submenu &&
                                 menuItem.submenu.map((submenuItem) => (
-                                  <Link
+                                  <a
                                     href={submenuItem.path ?? ""}
                                     key={submenuItem.id}
                                     className="block rounded py-2.5 font-medium text-lg text-dark hover:opacity-70 text-gray-800 px-5 text-left "
                                   >
                                     {submenuItem.title}
-                                  </Link>
+                                  </a>
                                 ))}
                             </div>
                           </>
