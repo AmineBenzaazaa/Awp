@@ -34,11 +34,11 @@ const AboutSectionOne: React.FC<AboutSectionOneProps> = ({
           <div className="container py-8 mx-0 flex flex-wrap items-center px-2 md:px-32">
             {" "}
             {/* Reduced padding */}
-            <div className="w-full pl-20 lg:w-3/5 justify-center items-center">
+            <div className="w-full p-10 sm:pl-20 lg:w-3/5 justify-center items-center">
               {" "}
               {/* Reduced width and padding */}
               {trustBadge && (
-                <div className="w-full absolute -top-20 right-0 hidden lg:block">
+                <div className="w-full absolute -top-20 right-0 hidden :block">
                   {" "}
                   {/* Adjusted badge size */}
                   <Image
@@ -61,7 +61,7 @@ const AboutSectionOne: React.FC<AboutSectionOneProps> = ({
               {" "}
               {/* Reduced padding */}
               <div
-                className="wow fadeInUp relative mx-auto aspect-[20/19]lg:mr-0" // Adjusted aspect ratio and max-width
+                className="wow fadeInUp relative mx-auto aspect-[20/19]lg:mr-0 " // Adjusted aspect ratio and max-width
                 data-wow-delay=".2s"
               >
                 <Image

@@ -116,7 +116,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-lg font-medium group-hover:opacity-70 text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                            className={`flex py-2 text-sm sm:text-lg font-medium group-hover:opacity-70 text-black sm:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                           >
                             {menuItem.title}
                           </Link>
@@ -124,7 +124,7 @@ const Header = () => {
                           <>
                             <a
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center font-medium text-lg justify-between py-2 group-hover:opacity-70 text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
+                              className="flex cursor-pointer items-center font-medium text-sm sm:text-lg justify-between py-2 group-hover:opacity-70  text-black sm:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
                             >
                               {menuItem.title}
                               <span className="pl-3">

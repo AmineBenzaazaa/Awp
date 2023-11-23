@@ -17,8 +17,8 @@ const Contact = () => {
       </section>
       <section className="w-1/1 md:1/2 px-12">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-left text-white">
-            Contactez-nous
+          <h2 className="mb-4 text-3xl sm:text-6xl tracking-tight font-extrabold text-left text-white">
+            Contactez Nous
           </h2>
           <p className="mb-8 font-light text-left text-gray-200 sm:text-md">
             Merci de manifester votre intérêt pour nous rejoindre ! Que vous

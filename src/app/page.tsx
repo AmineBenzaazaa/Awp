@@ -49,7 +49,7 @@ export default function Home() {
               width={180}
               height={1000}
             />
-            <h1 className="pt-8  mb-5 text-5xl font-light leading-tight text-white  sm:leading-tight md:leading-tight">
+            <h1 className="pt-8  mb-12 md:mb-5 text-5xl font-light leading-tight text-white  sm:leading-tight md:leading-tight">
                Powerful <div className="font-normal capilazed text-6xl "> Cleaning</div>
             </h1>
           </div>
@@ -58,7 +58,7 @@ export default function Home() {
       {/* Centered and Overlapping Section */}
       <section className="flex justify-center items-center text-center text-green-500 z-20 mx-6 sm:mx-0">
         <div  id="about" 
-          className="relative flex flex-col bg-clip-border bg-white p-20 text-gray-700 rounded-2xl shadow-lg shadow-gray-500/10"
+          className="relative flex flex-col bg-clip-border bg-white p-6 sm:p-20 text-gray-700 rounded-2xl shadow-lg shadow-gray-500/10"
           style={{ marginTop: "-100px" }}
         >
           <h2 className="text-3xl font-bold tracking-tight text-green-600 sm:text-4xl uppercase">

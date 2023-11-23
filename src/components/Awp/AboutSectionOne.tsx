@@ -34,7 +34,7 @@ const AboutSectionOne: React.FC<AboutSectionOneProps> = ({
           <div className="container py-8 mx-0 flex flex-wrap items-center px-2 md:px-32">
             {" "}
             {/* Reduced padding */}
-            <div className="w-full pl-20 lg:w-3/5 justify-center items-center">
+            <div className="w-full p-10 sm:pl-20 lg:w-3/5 justify-center items-center">
               {" "}
               {/* Reduced width and padding */}
               {trustBadge && (

@@ -13,8 +13,10 @@ import Prod5 from "../images/page 4/Essuit-tout.jpg";
 import Prod6 from "../images/page 4/ZIGZAG.png";
 
 import Tableimg from "../images/page 4/Table.png";
+import WBG from "@/app/images/Objet dynamique vectoriel copie 9.png";
 
 import Contact from "@/components/Contact";
+import Values from "@/components/Values";
 import Slideshow from "@/components/Awp/Slideshow";
 
 export default function page() {
@@ -22,7 +24,7 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "USAGE PRO",
-      tagline: "3R",
+      tagline: "3 R - 3 Layers",
       paragraph1:
         "AWP PRO est une collection de papiers professionnels soigneusement élaborée pour satisfaire les exigences particulières des entreprises, des institutions et des professionnels les plus exigeants. Notre gamme de papiers professionnels est le choix parfait pour maintenir la productivité et l'efficacité dans votre environnement de travail.",
       paragraph2:
@@ -32,7 +34,7 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "USAGE PRO",
-      tagline: "6R",
+      tagline: "6 R - 3 Layers",
       paragraph1:
         "AWP PRO est une collection de papiers professionnels soigneusement élaborée pour satisfaire les exigences particulières des entreprises, des institutions et des professionnels les plus exigeants. Notre gamme de papiers professionnels est le choix parfait pour maintenir la productivité et l'efficacité dans votre environnement de travail.",
       paragraph2:
@@ -42,7 +44,7 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "USAGE PRO",
-      tagline: "12R",
+      tagline: "12 R - 3 Layers",
       paragraph1:
         "AWP PRO est une collection de papiers professionnels soigneusement élaborée pour satisfaire les exigences particulières des entreprises, des institutions et des professionnels les plus exigeants. Notre gamme de papiers professionnels est le choix parfait pour maintenir la productivité et l'efficacité dans votre environnement de travail.",
       paragraph2:
@@ -52,7 +54,7 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "USAGE PRO",
-      tagline: "18R",
+      tagline: "18 R - 3 Layers",
       paragraph1:
         "AWP PRO est une collection de papiers professionnels soigneusement élaborée pour satisfaire les exigences particulières des entreprises, des institutions et des professionnels les plus exigeants. Notre gamme de papiers professionnels est le choix parfait pour maintenir la productivité et l'efficacité dans votre environnement de travail.",
       paragraph2:
@@ -60,6 +62,7 @@ export default function page() {
       imageSrc: Prod1,
     },
   ];
+
   const EssuiteTout = [
     {
       title: "Papier",
@@ -72,6 +75,7 @@ export default function page() {
       imageSrc: Prod5,
     },
   ];
+
   const ZigZag = [
     {
       title: "Papier",
@@ -79,8 +83,7 @@ export default function page() {
       tagline: "150 serviettes",
       paragraph1:
         "Découvrez notre gamme d'essuie-mains zigzag AWP PRO, la solution idéale pour une absorption maximale tout en préservant les ressources. Nos essuie-mains zigzag combinent parfaitement praticité et efficacité.",
-      paragraph2:
-        `Grâce aux plis en zigzag, nos essuie-mains facilitent la prise en main et l'essuyage, minimisant ainsi considérablement le gaspillage de papier. Que ce soit dans des restaurants, des cuisines, des bureaux, ou à la maison, nos essuie-mains zigzag sont adaptés à une variété de situations.
+      paragraph2: `Grâce aux plis en zigzag, nos essuie-mains facilitent la prise en main et l'essuyage, minimisant ainsi considérablement le gaspillage de papier. Que ce soit dans des restaurants, des cuisines, des bureaux, ou à la maison, nos essuie-mains zigzag sont adaptés à une variété de situations.
 
         Ils sont disponibles en lot de 150 serviettes pour répondre à vos besoins en matière de propreté et de praticité. Faites le choix de l'efficacité et de la durabilité avec nos essuie-mains zigzag AWP PRO.`,
       imageSrc: Prod6,
@@ -108,7 +111,7 @@ export default function page() {
           className="wow fadeInUp mx-auto max-w-[1200px] text-center"
           data-wow-delay=".2s"
         >
-          <div className="absolute top-[50%] right-8 transform translate-y-[-50%] flex flex-col space-y-14">
+          <div className="hidden md:flex absolute top-[50%] right-8 transform translate-y-[-50%] flex-col space-y-14">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={32} color="white" />
             </a>
@@ -122,11 +125,11 @@ export default function page() {
               <FaLinkedin size={32} color="white" />
             </a>
           </div>
-          <div className="relative flex flex-col items-center justify-center h-full">
+          <div className="relative flex flex-col items-center justify-center h-full px-8 pt-8">
             <Image src={Logo} alt="Celline" width={580} height={1000} />
-            <h1 className="my-12 text-2xl font-extrabold tracking-tight leading-none md:text-4xl text-white">
-              Africa west paper a conçu une gamme spéciale de produits
-              <div className="font-light">
+            <h1 className="py-6 text-3xl font-extrabold tracking-tight leading-none md:text-3xl text-white">
+              Africa west paper a conçu une gamme spéciale de produits <br />
+              <div className="font-light text-xl md:text-3xl p-4">
                 multi-usages pour le nettoyage professionnel.
               </div>
             </h1>
@@ -149,19 +152,26 @@ export default function page() {
       <div id="ZigZag">
         <Slideshow trustBadge={false} slides={ZigZag} />
       </div>
-      <div className="px-40 py-12">
-        <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#1f9257]">
+      <div className="p-6 sm:px-40 sm:py-12">
+        <h2 className="text-5xl sm:text-7xl font-extrabold text-[#1f9257] !leading-tight uppercase">
           Gamme <span className="font-light">Celline</span>
-        </h1>
+        </h2>
       </div>
       <div className="flex flex-col items-center justify-center pb-8">
-        <div className="flex items-center justify-center">
-          <Image src={Tableimg} className="w-[160%] h-[60%]" />
+        <div className="flex items-center justify-center px-6">
+          <Image alt="table" src={Tableimg} className="w-[160%] h-[60%]" />
         </div>
       </div>
-      <div className="bg-[#1f9356]">
+      <section
+        id="home"
+        className="from-[#22a45b] via-[#2f9e98] to-[#3f8ec4] relative overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] py-[20px] md:pt-[100px] md:pb-[20px] "
+      >
+        <div className="absolute top-[80%] right-0 transform translate-y-[-50%] flex flex-col space-y-14">
+          <Image src={WBG} alt="Africa West Paper" height={600} />
+        </div>
         <Contact />
-      </div>
+      </section>
+      
     </>
   );
 }

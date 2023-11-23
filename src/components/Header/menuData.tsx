@@ -10,7 +10,7 @@ const menuData: Menu[] = [
   {
     id: 1,
     title: "Qui Somme nous".toUpperCase(),
-    path: "#about",
+    path: "/",
     newTab: false,
   },
   {

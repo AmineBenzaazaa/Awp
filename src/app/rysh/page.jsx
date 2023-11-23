@@ -2,8 +2,7 @@
 import Image from "next/image";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-import AboutSectionOne from "@/components/Rysh/AboutSectionOne";
-import { Tabs, Tab } from "@/components/Rysh/Tabs";
+import WBG from "@/app/images/Objet dynamique vectoriel copie 9.png";
 
 import Logo from "../images/page 3/logo.png";
 import Prod1 from "../images/page 3/Papier HYGIENIQUE x4.jpg";
@@ -33,7 +32,7 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "Hygiénique",
-      tagline: "4R",
+      tagline: "4R - 3 Layers",
       paragraph1:
         "Rysh offre un papier hygiénique 2 plis de qualité, comme il est conçu pour répondre à vos besoins en matière de confort, de propreté et de durabilité. Fabriqué à partir de matières premières de première qualité, il est doux au toucher, résistant et incroyablement absorbant        ",
       paragraph2: ` 
@@ -43,7 +42,7 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "Hygiénique",
-      tagline: "6 R",
+      tagline: "6 R - 3 Layers",
       paragraph1:
         "Rysh offre un papier hygiénique 2 plis de qualité, comme il est conçu pour répondre à vos besoins en matière de confort, de propreté et de durabilité. Fabriqué à partir de matières premières de première qualité, il est doux au toucher, résistant et incroyablement absorbant        ",
       paragraph2: ` 
@@ -53,7 +52,7 @@ export default function page() {
     {
       title: "Papier 3",
       subTitle: "Hygiénique",
-      tagline: "12 R",
+      tagline: "12 R - 3 Layers",
       paragraph1:
         "Rysh offre un papier hygiénique 2 plis de qualité, comme il est conçu pour répondre à vos besoins en matière de confort, de propreté et de durabilité. Fabriqué à partir de matières premières de première qualité, il est doux au toucher, résistant et incroyablement absorbant        ",
       paragraph2: ` 
@@ -63,7 +62,7 @@ export default function page() {
     {
       title: "Papier 3",
       subTitle: "Hygiénique",
-      tagline: "24 R",
+      tagline: "24 R - 3 Layers",
       paragraph1:
         "Rysh offre un papier hygiénique 2 plis de qualité, comme il est conçu pour répondre à vos besoins en matière de confort, de propreté et de durabilité. Fabriqué à partir de matières premières de première qualité, il est doux au toucher, résistant et incroyablement absorbant        ",
       paragraph2: ` 
@@ -76,7 +75,7 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "ESSUIE-TOUT",
-      tagline: "1 R",
+      tagline: "1 R - 3 Layers",
       paragraph1:
         "L’essuie-tout Rysh est composé d’un papier 2 plis  de qualité, 100% pure ouate de cellulose, absorbant et résistant, pour tous les usages du quotidien.        ",
       paragraph2: ` 
@@ -109,18 +108,18 @@ export default function page() {
       subTitle: "Mouchoirs",
       tagline: "300 Feuilles",
       paragraph1:
-      "Rysh propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort.        ",
-    paragraph2: `Conçus pour apporter un soulagement instantané, Rysh propose des  mouchoirs parfaits pour faire face aux éternuements, aux larmes, ou simplement pour se rafraîchir      `,
-    imageSrc: Prod2,
+        "Rysh propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort.        ",
+      paragraph2: `Conçus pour apporter un soulagement instantané, Rysh propose des  mouchoirs parfaits pour faire face aux éternuements, aux larmes, ou simplement pour se rafraîchir      `,
+      imageSrc: Prod2,
     },
     {
       title: "Papier",
       subTitle: "Mouchoirs",
       tagline: "550 Feuilles",
       paragraph1:
-      "Rysh propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort.        ",
-    paragraph2: `Conçus pour apporter un soulagement instantané, Rysh propose des  mouchoirs parfaits pour faire face aux éternuements, aux larmes, ou simplement pour se rafraîchir      `,
-    imageSrc: Prod10,
+        "Rysh propose une gamme de mouchoirs sous plusieurs formats pour accompagner vos besoins au quotidien. Un papier de qualité qui assure douceur et confort.        ",
+      paragraph2: `Conçus pour apporter un soulagement instantané, Rysh propose des  mouchoirs parfaits pour faire face aux éternuements, aux larmes, ou simplement pour se rafraîchir      `,
+      imageSrc: Prod10,
     },
   ];
 
@@ -128,14 +127,14 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "Poket",
-      tagline: "10 Mouchoirs",
+      tagline: "10 Mouchoirs - 3 Layers",
       paragraph1:
         "Explorez les papiers pocket de la marque Rysh, spécialement conçus pour offrir une solution pratique et douce pour vos besoins quotidiens. Que ce soit pendant la saison du rhume, en cas d'allergies prononcées ou simplement pour vous rafraîchir, les papiers pocket Rysh sont là pour vous. ",
       paragraph2: `Leur conception est centrée sur votre confort, avec une douceur remarquable, une résistance fiable et une facilité d'emport partout où vous allez. Grâce à leur format compact, glissez-les dans votre sac, votre poche, ou gardez-les à portée de main à la maison ou au bureau, prêts à être utilisés à chaque besoin, que ce soit un éternuement ou simplement pour vous sentir bien.      `,
-     imageSrc: Prod11,
+      imageSrc: Prod11,
     },
   ];
-  
+
   const Napking = [
     {
       title: "Papier",
@@ -144,7 +143,7 @@ export default function page() {
       paragraph1:
         "Découvrez la variété de serviettes en papier RYSH, méticuleusement conçues pour allier délicatesse et une remarquable capacité d'absorption. Ces serviettes sont le complément parfait pour n'importe quelle table, que ce soit pour un repas familial décontracté ou une occasion spéciale. De plus, elles constituent une solution discrète pour ranger vos couverts, serviettes et autres accessoires de table.        ",
       paragraph2: `Explorez notre sélection de produits pour découvrir précisément ce qui convient à vos besoins. Chez RYSH, la qualité est notre priorité absolue, et nous nous engageons à répondre à vos besoins en matière de papier de table. Nos serviettes, disponibles en lot de 75, ajoutent une touche de confort et d'élégance à chaque événement, qu'il s'agisse d'une réception ou d'un repas en famille      `,
-     imageSrc: Prod12,
+      imageSrc: Prod12,
     },
   ];
 
@@ -166,8 +165,9 @@ export default function page() {
         className="bg-gradient-to-r from-[#622a81] via-[#712d84] to-[#9c2080]  pt-[40px] pb-[20px] md:pt-[60px] md:pb-[100px]"
       >
         <Image
+          alt=""
           src={bg}
-          className="absolute inset-0  w-full h-full object-cover z-[10]"
+          className="absolute inset-0  w-full h-full object-cover z-[10] hidden md:block"
         />
         <div
           className="wow fadeInUp mx-auto max-w-[1200px] text-center"
@@ -196,8 +196,12 @@ export default function page() {
               <div className="font-light"></div>
             </h1>
             <h1 className="py-6 text-2xl font-extrabold tracking-tight leading-none md:text-3xl text-white">
+              <div className="font-light py-4"></div>
+            </h1>
+            <h1 className="py-6 text-3xl font-extrabold tracking-tight leading-none md:text-3xl text-white">
               Rysh offre l’accès à une large gamme de papiers qui participe à{" "}
-              <div className="font-light py-4">
+              <br />
+              <div className="font-light text-xl md:text-3xl p-4">
                 l’hygiène quotidienne de toute la famille.
               </div>
             </h1>
@@ -205,7 +209,7 @@ export default function page() {
         </div>
       </section>
 
-      <div className="w-full bg-[#712d84] py-4">
+      <div className="w-full bg-[#712d84] py-4 sm:block hidden">
         <ul className="flex max-w-min flex-row -mb-px  text-lg font-medium text-center text-white container mx-auto">
           <NavigationItem href="#Hygienique" label="Hygiénique" />
           <NavigationItem href="#EssuiteTout" label="EssuiteTout" />
@@ -221,6 +225,17 @@ export default function page() {
       <div id="EssuiteTout">
         <Slideshow trustBadge={false} slides={EssuiteTout} />
       </div>
+      <div className="p-6 sm:px-40 sm:py-12">
+        <h2 className="text-5xl sm:text-7xl font-extrabold text-[#712d84] !leading-tight uppercase">
+          Gamme <span className="font-light">Rysh</span>
+        </h2>
+      </div>
+
+      <div className="flex flex-col items-center justify-center pb-8">
+        <div className="flex items-center justify-center">
+          <Image alt="table" src={Tableimg} className="w-[160%] h-[60%]" />
+        </div>
+      </div>
       <div id="Mouchoirs">
         <Slideshow trustBadge={false} slides={Mouchoirs} />
       </div>
@@ -231,21 +246,15 @@ export default function page() {
         <Slideshow trustBadge={false} slides={Napking} />
       </div>
 
-      <div className="px-40 py-12">
-        <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#712d84]">
-          Gamme <span className="font-light">Rysh</span>
-        </h1>
-      </div>
-
-      <div className="flex flex-col items-center justify-center pb-8">
-        <div className="flex items-center justify-center">
-          <Image alt="table" src={Tableimg} className="w-[160%] h-[60%]" />
+      <section
+        id="home"
+        className="from-[#22a45b] via-[#2f9e98] to-[#3f8ec4] relative overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] py-[20px] md:pt-[100px] md:pb-[20px] "
+      >
+        <div className="absolute top-[80%] right-0 transform translate-y-[-50%] flex flex-col space-y-14">
+          <Image src={WBG} alt="Africa West Paper" height={600} />
         </div>
-      </div>
-
-      <div className="bg-gradient-to-r from-[#622a81] via-[#712d84] to-[#9c2080] ">
         <Contact />
-      </div>
+      </section>
     </>
   );
 }

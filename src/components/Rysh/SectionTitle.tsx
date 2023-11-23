@@ -33,13 +33,13 @@ const SectionTitle = ({
         <h2 className="text-5xl sm:text-7xl font-extrabold text-[#672a81] !leading-tight uppercase">
           {subTitle}
         </h2>
-        <h2 className="text-5xl sm:text-5xl font-meduim text-[#ca962b] !leading-tight uppercase">
+        <h2 className="text-3xl sm:text-5xl font-meduim text-[#ca962b] !leading-tight uppercase">
           {tagline}
         </h2>
-        <p className="text-sm sm:text-sm md:text-md py-6 text-gray-500 !leading-relaxed text-body-color ">
+        <p className="text-sm sm:text-sm md:text-md py-6 text-gray-500 !leading-relaxed text-body-colormy-4 sm:my-1">
           {paragraph1}
         </p>
-        <p className="text-sm sm:text-sm md:text-md text-gray-500 !leading-relaxed text-body-color">
+        <p className="text-sm sm:text-sm md:text-md text-gray-500 !leading-relaxed text-body-color  sm:block hidden  ">
           {paragraph2}
         </p>
       </div>

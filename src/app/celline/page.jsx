@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { useMediaQuery } from "react-responsive";
+
 import Link from "next/link";
 
 // Import Swiper styles
@@ -11,7 +11,6 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
-import AboutSectionOne from "@/components/About/AboutSectionOne";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import Logo from "../images/page 2/Logo.png";
@@ -34,16 +33,21 @@ import Prod11 from "@/app/images/page 2/CELLINE POKET.png";
 import Prod12 from "@/app/images/page 2/NAPKING CELLINE.png";
 
 import Tableimg from "../images/page 2/Table.png";
+import WBG from "@/app/images/Objet dynamique vectoriel copie 9.png";
 
 import Slideshow from "@/components/Celline/Slideshow";
 import Contact from "@/components/Contact";
 
 export default function page() {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  console.log("isMobile :>> ", isMobile);
+
   const Hygienique = [
     {
       title: "Papier",
       subTitle: "Hygiénique",
-      tagline: "4R",
+      tagline: "4 R - 3 Layers",
       paragraph1:
         "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
       paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
@@ -55,7 +59,7 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "Hygiénique",
-      tagline: "7+2 R",
+      tagline: "7+2 R - 3 Layers",
       paragraph1:
         "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
       paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
@@ -65,9 +69,9 @@ export default function page() {
       imageSrc: Prod1,
     },
     {
-      title: "Papier 3",
+      title: "Papier",
       subTitle: "Hygiénique",
-      tagline: "12 R",
+      tagline: "12 R - 3 Layers",
       paragraph1:
         "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
       paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
@@ -77,9 +81,9 @@ export default function page() {
       imageSrc: Prod3,
     },
     {
-      title: "Papier 3",
+      title: "Papier",
       subTitle: "Hygiénique",
-      tagline: "24 R",
+      tagline: "24 R - 3 Layers",
       paragraph1:
         "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
       paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
@@ -89,9 +93,9 @@ export default function page() {
       imageSrc: Prod4,
     },
     {
-      title: "Papier 3",
+      title: "Papier",
       subTitle: "Hygiénique ",
-      tagline: "32 R",
+      tagline: "32 R - 3 Layers",
       paragraph1:
         "Avec sa triple épaisseur et sa texture hyper absorbante en 100% pure ouate de cellulose , le papier Celline vous garantit à la fois douceur et résistance pour un confort optimal d’utilisation.        ",
       paragraph2: `Composé de matière première de première qualité, il se distingue par sa douceur et sa robustesse, 
@@ -105,8 +109,8 @@ export default function page() {
   const EssuiteTout = [
     {
       title: "Papier",
-      subTitle: "ESSUIE-TOUT 1R",
-      tagline: "1 R",
+      subTitle: "ESSUIE-TOUT",
+      tagline: "1 R - 3 Layers",
       paragraph1:
         "Grâce à sa composition 100% pure ouate de cellulose et à sa double épaisseur, l’essuie-tout Celline est à la fois absorbant et résistant pour de multiples usages et un confort d’utilisation optimal soit en cuisines ou en espaces de nettoyage,        ",
       paragraph2: `Découvrez notre gamme d'essuie-tout de qualité supérieure, conçus pour répondre à tous vos besoins de nettoyage. 
@@ -160,11 +164,11 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "Poket",
-      tagline: "10 Mouchoirs",
+      tagline: "10 Mouchoirs - 3 Layers",
       paragraph1:
         "Découvrez les papiers pocket CELLINE, spécialement conçus pour essuyer le nez, offrant une solution pratique et douce pour faire face au quotidien, que ce soit pendant la saison du rhume, en cas d'allergies prononcées ou simplement pour rafraîchir.  ",
       paragraph2: `Nos papiers pocket sont élaborés en pensant à votre confort. Ils sont doux, résistants et faciles à emporter partout où vous allez. Grâce à leur format compact, glissez-les dans votre sac, votre poche, ou gardez-les à portée de main à la maison ou au bureau, prêts à être utilisés à chaque éternuement.      `,
-     imageSrc: Prod11,
+      imageSrc: Prod11,
     },
   ];
 
@@ -172,11 +176,11 @@ export default function page() {
     {
       title: "Papier",
       subTitle: "Napking",
-      tagline: "75 Serviette",
+      tagline: "75 Serviette ",
       paragraph1:
         "Explorez la variété de serviettes en papier CELLINE, soigneusement conçues pour marier délicatesse et une remarquable capacité d'absorption. Ces serviettes sont le complément parfait pour n'importe quelle table, que ce soit pour un repas familial décontracté ou une occasion spéciale. De plus, elles constituent une solution discrète pour ranger vos couverts, serviettes et autres accessoires de table.        ",
       paragraph2: `Plongez dans notre sélection de produits pour découvrir précisément ce qui convient à vos besoins. Chez CELLINE, la qualité est notre priorité absolue, et nous nous engageons à répondre à vos besoins en matière de papier de table. Nos serviettes, disponibles en lot de 75, ajoutent une touche de confort et d'élégance à chaque événement, qu'il s'agisse d'une réception ou d'un repas en famille.      `,
-     imageSrc: Prod12,
+      imageSrc: Prod12,
     },
   ];
 
@@ -204,12 +208,17 @@ export default function page() {
           <div className="absolute top-[40%] right-8 transform translate-y-[-50%] flex flex-col space-y-14"></div>
           <div className="flex flex-col items-center justify-center h-full">
             {" "}
-            <Image src={Logo} alt="Celline" width={480} height={1100} />
+            <Image
+              alt="Celline"
+              src={Logo}
+              width={isMobile ? 240 : 480} // Set different widths for mobile and non-mobile
+              height={isMobile ? 550 : 1100} // Set different heights for mobile and non-mobile
+            />
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-              <h1 className="py-6 text-2xl font-extrabold tracking-tight leading-none md:text-3xl text-white">
-                Celline vous offre tout le confort d’un papier de haute <br />
-                <div className="font-light py-4">
-                  qualité pour une meilleure hygiène quotidienne.
+              <h1 className="py-6 text-3xl font-extrabold tracking-tight leading-none md:text-3xl text-white">
+                Celline vous offre tout le confort d’un papier <br />
+                <div className="font-light text-xl md:text-3xl p-4">
+                  De haute Qualité pour une meilleure hygiène quotidienne.
                 </div>
               </h1>
               <div className="hidden md:flex absolute top-[50%] right-8 transform translate-y-[-50%] flex-col space-y-14">
@@ -237,7 +246,7 @@ export default function page() {
         }`}
 
       </div> */}
-      <div className="w-full bg-[#0f4690] py-4">
+      <div className="w-full bg-[#0f4690] py-4 sm:block hidden">
         <ul className="flex max-w-min flex-row -mb-px  text-lg font-medium text-center text-white container mx-auto">
           <NavigationItem href="#Hygienique" label="Hygiénique" />
           <NavigationItem href="#EssuiteTout" label="EssuiteTout" />
@@ -251,31 +260,37 @@ export default function page() {
         <Slideshow trustBadge={true} slides={Hygienique} />
       </div>
       <div id="EssuiteTout">
-        <Slideshow trustBadge={false} slides={EssuiteTout} />
+        <Slideshow trustBadge={true} slides={EssuiteTout} />
       </div>
-      <div id="Mouchoirs">
-        <Slideshow trustBadge={true} slides={Mouchoirs} />
-      </div>
-      <div id="Poket">
-        <Slideshow trustBadge={false} slides={Poket} />
-      </div>
-      <div id="Napking">
-        <Slideshow trustBadge={false} slides={Napking} />
-      </div>
-
-      <div className="px-40 py-12">
-        <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-6xl text-[#0f4690]">
+      <div className="p-6 sm:px-40 sm:py-12">
+        <h2 className="text-5xl sm:text-7xl font-extrabold text-[#0E4690] !leading-tight uppercase">
           Gamme <span className="font-light">Celline</span>
-        </h1>
+        </h2>
       </div>
       <div className="flex flex-col items-center justify-center pb-8">
         <div className="flex items-center justify-center">
           <Image alt="table" src={Tableimg} className="w-[160%] h-[60%]" />
         </div>
       </div>
-      <div className="bg-gradient-to-r from-[#00feff] via-[#019cf8] to-[#0045f3]">
-        <Contact />
+      <div id="Mouchoirs">
+        <Slideshow trustBadge={true} slides={Mouchoirs} />
       </div>
+      <div id="Poket">
+        <Slideshow trustBadge={true} slides={Poket} />
+      </div>
+      <div id="Napking">
+        <Slideshow trustBadge={true} slides={Napking} />
+      </div>
+
+      <section
+        id="home"
+        className="from-[#22a45b] via-[#2f9e98] to-[#3f8ec4] relative overflow-hidden bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] py-[20px] md:pt-[100px] md:pb-[20px] "
+      >
+        <div className="absolute top-[80%] right-0 transform translate-y-[-50%] flex flex-col space-y-14">
+          <Image src={WBG} alt="Africa West Paper" height={600} />
+        </div>
+        <Contact />
+      </section>
     </>
   );
 }
