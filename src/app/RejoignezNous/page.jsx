@@ -10,7 +10,7 @@ const RejoignezNous = () => {
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
           REJOIGNEZ NOUS
         </h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-gray-50 sm:text-xl">
+        <p className="mb-8 lg:mb-16 font-light text-center text-gray-50 sm:text-md">
           Nous sommes ravis que vous envisagiez de rejoindre notre équipe
           dynamique chez Africa West Paper. Chez nous, nous croyons en la
           puissance de l'innovation, de la collaboration et du dévouement pour
