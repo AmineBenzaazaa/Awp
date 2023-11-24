@@ -10,7 +10,7 @@ const menuData: Menu[] = [
   {
     id: 1,
     title: "Qui Somme nous".toUpperCase(),
-    path: "/",
+    path: "#about",
     newTab: false,
   },
   {
@@ -41,7 +41,7 @@ const menuData: Menu[] = [
   {
     id: 3,
     title: "NOS VALEURS".toUpperCase(),
-    path: "/",
+    path: "#valeurs",
     newTab: false,
   },
   {
