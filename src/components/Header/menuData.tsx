@@ -47,7 +47,13 @@ const menuData: Menu[] = [
   {
     id: 4,
     title: "CONTACT".toUpperCase(),
-    path: "/",
+    path: "#contact",
+    newTab: false,
+  },
+  {
+    id: 4,
+    title: "rejoignez nous".toUpperCase(),
+    path: "/RejoignezNous",
     newTab: false,
   },
 ];
