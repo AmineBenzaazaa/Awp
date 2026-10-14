@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Africa West Paper (AWP) website
 
-## Getting Started
+French-language marketing website for **Africa West Paper**, a maker of paper hygiene products (toilet paper, paper towels, tissues). The site presents the company and its three brands: **Celline**, **Rysh** and **AWP Pro**.
 
-First, run the development server:
+## Pages
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+| Route | Content |
+| --- | --- |
+| `/` | Hero, company presentation ("Qui sommes-nous"), brand logos, values ("Nos Valeurs") and contact form |
+| `/celline` | Celline brand page with a product slideshow and product tabs |
+| `/rysh` | Rysh brand page with a product slideshow and product tabs |
+| `/awp` | AWP Pro (professional range) page with product details |
+| `/RejoignezNous` | "Join us" page with an application form |
+
+The contact and "Rejoignez nous" forms are front-end only. They post to `#` and nothing handles their submissions.
+
+## Tech stack
+
+- [Next.js](https://nextjs.org/) 13 (App Router), React 18, TypeScript/JSX
+- Tailwind CSS
+- `react-icons`, `next-themes`
+- Carousel and slideshow libraries: `swiper`, `react-slick` / `slick-carousel`, `react-slideshow-image`, `react-responsive-carousel`, `react-image-gallery`
+
+## Project structure
+
+```
+src/
+  app/
+    page.tsx                 # Home page
+    layout.tsx               # Root layout (header, scroll-to-top, footer)
+    celline/ rysh/ awp/      # Brand pages
+    RejoignezNous/           # Recruitment / contact form page
+    images/                  # Product and brand images imported by pages
+  components/
+    Header/                  # Navigation (menuData.tsx), theme toggler
+    Celline/ Rysh/ Awp/      # Brand-specific sections, slideshows, tabs
+    Marques/ Values/ Contact/ About/ Footer/ Common/ ...
+  types/                     # Shared TypeScript types
+public/
+  images/, marques/          # Static images and brand logos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Requirements: Node.js 18 or later.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm install
+npm run dev      # http://localhost:3000
+```
 
-## Learn More
+Other scripts: `npm run build`, `npm start`, `npm run lint`.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+No environment variables are needed.
